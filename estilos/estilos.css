@@ -1,0 +1,150 @@
+ h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+ h2 {
+  font-weight: bold;
+  font-size: 1.75em;
+}
+ p {
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+ blockquote {
+  margin-left: 1.75px;
+  margin-right: 0px;
+  border-left: 5px solid var(--text-color-resalt);
+  border-radius: var(--border-radius);
+  padding: 10px 14px 7px 22px;
+  background-color: var(--contrast-bg-color);
+  font-style: italic;
+}
+ blockquote p {
+  margin-bottom: 0;
+}
+ pre {
+  border-radius: var(--border-radius) !important;
+  font-size: 15px;
+  background-color: var(--contrast-bg-color) !important;
+}
+ p code,
+ a code {
+  border-radius: var(--border-radius);
+  background-color: var(--contrast-bg-color);
+  padding: 3px;
+}
+ img {
+  margin-left: auto;
+  margin-right: auto;
+}
+ .cornell {
+  width: 100% !important;
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+ .cornell * {
+  border-radius: var(--border-radius);
+  margin-block: 0;
+}
+ .ask {
+  max-width: 33% !important;
+  fill: aqua;
+  color: var(--color-text-primary);
+  background: var(--contrast-bg-color);
+  text-align: center;
+  font-size: 23px;
+  padding: 15px;
+}
+ .rta {
+  color: var(--color-text-primary);
+  background: var(--contrast-bg-color);
+  text-align: left;
+  font-size: 18px;
+  padding: 15px;
+  width: 100%;
+}
+ .cornell hr {
+  height: auto;
+  width: 0.7vw;
+  border-width: 0;
+  color: var(--bg-color5);
+  background-color: var(--text-color-resalt);
+  text-align: left;
+  margin-inline: 15px;
+}
+ a[href] {
+  text-decoration: none;
+  color: var(--text-color-resalt);
+}
+ table {
+  padding: 0;
+  word-break: initial;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+}
+ table tr {
+  border-top: 1px solid var(--dark-border);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-table-tr);
+}
+ table tr th {
+  font-weight: bold;
+  border: 1px solid var(--dark-border);
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+  font-size: 20px;
+}
+ table tr td {
+  border: 1px solid var(--dark-border);
+  margin: 0;
+  padding: 6px 13px;
+  font-size: 17px;
+}
+ table tr th:first-child,
+ table tr td:first-child {
+  margin-top: 0;
+}
+ table tr th:last-child,
+ table tr td:last-child {
+  margin-bottom: 0;
+}
+ table tr:nth-child(2n),
+ table tr:nth-child(1n) td {
+  background-color: var(--bg-table-l1);
+}
+ table tr:nth-child(2n),
+ table tr:nth-child(2n) td {
+  background-color: var(--bg-table-l2);
+}
+ ul,
+ ol {
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: none;
+}
+ ul:first-child,
+ ol:first-child {
+  margin-top: 0.35%;
+}
+ ul:last-child,
+ ol:last-child {
+  margin-bottom: 0;
+}
+ .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+ .l {
+  margin-left: 0;
+}
+ .r {
+  margin-right: 0;
+}
+
+img {max-width: -webkit-fill-available;}
