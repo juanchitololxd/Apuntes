@@ -1,0 +1,103 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+<script src="./../main.js"></script>
+    </head>
+    <body>
+        <div class="setter">
+            <button onclick="setStyles()">Cambiar</button>
+        </div>
+        <h1>Redes</h1>
+        <div id="estandares" class="tema2">
+            <h2>estandares</h2>
+            <ul>
+                <li>JURE. Promovidas por organizaciones como ISO, IEEE etc</li>
+                <li>FACTO. Promovidos por entes o grupos de personas, es un "estandar informal", son mas conocidos
+                    como buenas practicas
+                </li>
+            </ul>
+            <p>Ejemplos:</p>
+        </div>
+        
+        <div id="clases" class="tema2">
+            <h2>clases</h2>
+            <table>
+                <tr>
+                    <th>Clase</th>
+                    <th>Definición</th>
+                    <th>Cubrimiento Distancia</th>
+                    <th>Administracion</th>
+                    <th>Extra</th>
+
+                </tr>
+                <tr>
+                    <td>HAN</td>
+                    <td>Home Personal Network</td>
+                    <td>Casa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PAN</td>
+                    <td>Personal Area Network</td>
+                    <td>Casa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>LAN</td>
+                    <td>Local Area Network</td>
+                    <td>100m</td>
+                    <td>El dueño del sitio</td>
+                    <td>Los nodos son switches (conmutación). Alta velocidad</td>
+                </tr>
+                <tr>
+                    <td>MAN</td>
+                    <td>Metropolitan Area Network</td>
+                    <td>Ciudad</td>
+                    <td>Empresas con varias sucursales</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>WAN</td>
+                    <td>Wide Area Network</td>
+                    <td>Pais-Continente</td>
+                    
+                    <td></td>
+                    <td>Los nodos son routers (Enrutación). Menor velocidad</td>
+                </tr>
+            </table>
+            <p>En el caso de las MAN, cada sucursal puede tener internamente una LAN</p>
+            <strong>La administración abarca el quien compra los equipos, uso, configuraciones etc</strong>
+            
+        </div>
+
+        <div id="Arquitectura" class="tema2">
+            <h2>Arquitectura</h2>
+            <p>Conjunto de <a href="./capas.html">Capas</a>, <a href="#Protocolos">Protocolos</a> e <a href="#interfaces">interfaces</a>
+            que facilitan el diseño, programación, operación y mantenimiento de las tareas que maneja una red</p>
+
+            <img src="./OTROS/ej-capas-protocolos.png" alt="">
+            
+            <div id="Protocolos" class="tema3">
+                <h3>Protocolos</h3>
+                <p>Reglas o formatos para que las capas de diferentes maquinas puedan comunicarse</p>
+            </div>
+
+            <div id="interfaces" class="tema3">
+                <h3>interfaces</h3>
+                <p>Define que operaciones y servicios ofrece la capa inferior a la superior</p>
+            </div>
+        </div>
+
+
+        
+
+
+        
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>

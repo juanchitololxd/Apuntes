@@ -1,0 +1,136 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+<script src="./../main.js"></script>
+    </head>
+    <body>
+        <div class="setter">
+            <button onclick="setStyles()">Cambiar</button>
+        </div>
+        <h1>Capas</h1>
+        <div id="Capas" class="tema3">
+            <h3>Capas</h3>
+            <p>Permiten:</p>
+            <ul>
+                <li>Reducir complejidad, ya que cada capa tiene su función definida</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <p>Cada una tiene un PDU: protocol data unit, es la información de control</p>
+        </div>
+        <div id="OSI y TCP/IP" class="tema2">
+            <h2>OSI y TCP/IP</h2>
+            <P>La primera es un modelo y la otra es una arquitectura</P>
+            <img src="./OTROS/osi-tcp.png" alt="">
+
+            <div class="cornell">
+                 <p class="ask">Firmware</p>
+                <hr/>
+                <div class="rta">Software que maneja el hardware</div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Capa</th>
+                <th>PDU</th>
+            </tr>
+            <tr>
+                <td>Aplicación</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Enlace</td>
+                <td>Frames</td>
+            </tr>
+        </table>
+
+        
+        <div id="Aplicación" class="tema2">
+            <h2>Aplicación</h2>
+            <p>Soporta las aplicaciones de la red</p>
+        <p>Esas Apps no son netflix ni mmds de ese tipo, estas son apps de usuario</p>
+        <ul>
+            <li>Define estandares de red</li>
+            <li>Asuntos de seguridad</li>
+        </ul>
+        </div>
+        
+        <div id="Transporte" class="tema2">
+            <h2>Transporte</h2>
+            <ul>
+                <li>Se asegura de que los mensajes pasen bien al otro lado (control de errores)</li>
+                <li>Determina el <a href="#tipo de servicio">tipo de servicio</a></li>
+                <li>Mantiene la conexión de extremo a extremo, la inicia y la cierra</li>
+                <li>Control de flujo (que no se congestione la transmisión).</li>
+                <li>Administra diferentes conexiones de usuario</li>
+                <li>Control de congestión</li>
+                <li>Asuntos de seguridad</li>
+            </ul>
+            <div id="tipo de servicio" class="tema3">
+                <h3>tipo de servicio</h3>
+                <ul>
+                    <li>OAC: Orientado a conexión. Aquí antes de enviar los datos, se establece comunicación con el destino</li>
+                    <li>NOAC: Se envían datos suponiendo que el destino está abierto</li>
+                </ul>
+    
+            </div>
+        </div>
+
+        <div id="Red" class="tema2">
+            <h2>Red</h2>
+            <ul>
+                <li>Controla el funcionamiento de la subred</li>
+                <li>Facturación a los usuarios de los gatos gastados por ejemplo</li>
+                <li>Manejo de rutas</li>
+                <li>Control de congestión (OSI)</li>
+                <li>Solución de problemas de red</li>
+                <li>Fragmentación de los paquetes, para que puedan pasar de una red a otra</li>
+            </ul>
+        </div>
+        <div id="Enlace" class="tema2">
+            <h2>Enlace</h2>
+            <ul>
+                <li>Soluciona problemas con los  frames (no enviados o duplicados)</li>
+                <li>Manejo de buffers para guardar temporalmente los frames</li>
+                <li>Control de flujo</li>
+            </ul>
+        </div>
+
+        <div class="cornell">
+             <p class="ask">Buffer</p>
+            <hr/>
+            <div class="rta">Espacio de memoria</div>
+        </div>
+        
+
+        <div id="Fisica" class="tema2">
+            <h2>Fisica</h2>
+            <ul>
+                <li>Transmite los bits por el medio fisico</li>
+                <li>Se preocupa por la parte electrica </li>
+                <li>Tipo de comunicación</li>
+            </ul>
+        </div>
+
+        <div id="Tipo de comunicación" class="tema3">
+            <h3>Tipo de comunicación</h3>
+            <ul>
+                <li>Duplex:</li>
+                <li>Simplex</li>
+                
+            </ul>
+        </div>
+        
+        
+        
+
+        
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>
