@@ -34,7 +34,8 @@
         <div id="Orden" class="tema2">
             <h2>Orden</h2>
             <p>El orden será el orden de la mayor derivada en la ecuación</p>
-            <p>Es el numero que acompaña ala d.</p>
+            <p>Es el numero que acompaña a la d.</p>
+            <p><strong>Si aparece (d^2y/dx^2)^5, el orden es el 2</strong></p>
         </div>
 
 
@@ -65,41 +66,79 @@
 
         <div id="Linealidad" class="tema2">
             <h2>Linealidad</h2>
-            <p></p>
+            <p>una ec diferencial es lineal si sus funciones son lineales.</p>
+            <p>la var independiente puede realizar cualquier operación, pero la dependiente no puede 
+                multiplicarse con alguan derivada suya, o ser el parametro de una funcion no lineal 
+            </p>
+
+            <div id="identificar linealidad" class="tema3">
+                <h3>identificar linealidad</h3>
+                <ol>
+                    <li>Identificar la variable dependiente: será aquella que tenga derivadas en la ED</li>
+                    <li>Identificar si esta var no argumento de una función no lineal (como un logaritmo o cosas asi) </li>
+                </ol>
+            </div>
+            <p>Una función es lineal si:</p>
+            <ul>
+                <li>La variable dependiente y todas sus derivadas son de primer grado</li>
+                <li>Los coeficientes de la variable dependiente y sus derivadas dependen de la variable independiente</li>
+                <li> La variable independiente no está afectada por una operación mayor (es decir: si está en el denominador
+                    o está en una raiz paila)
+                </li>
+            </ul>
+
+
+            
+
+            <p>Ejemplos:</p>
+                <img src="./OTROS/ejemplos-linealidad.png" alt="">
+                <img src="./OTROS/ejemplos-linealidad2.png" alt="">
+
         </div>
 
-
-        <div id="Solucion EDO" class="tema2">
-            <h2>Solucion EDO</h2>
-            
-            <ol>
-                <li>Se reemplaza la funcion y sus derivadas en la ED</li>
-                <li>Se debe cumplir la igualdad ( como en preca lit)</li>
-            </ol>
+        <div class="cornell">
+             <p class="ask">Que es solución de una EDO</p>
+            <hr/>
+            <div class="rta">Se considera solución toda función que, al reemplazarla en la EDO
+                cumpla la igualdad (como en preca lit)
+            </div>
         </div>
 
         <div id="Verificacion solucion explicita" class="tema2">
             <h2>Verificacion solucion explicita</h2>
-            <img src="./OTROS/verificacion-solucion.png" alt="">
+            <p>Coger la función y reemplazarla, lit</p>
         </div>
 
         
         <div id="Solucion implicita EDO" class="tema2">
             <h2>Solucion implicita EDO</h2>
-            <p>Se da cuango <italic>G(x,y) = 0</italic></p>
+            <p>Se da cuango <italic>G(x,y) = 0</italic>, pero es lo mismo, reemplazar la función que se
+            plantea como solución</p>
+        </div>
+
+        <div class="cornell">
+             <p class="ask">Diferencia entre una función y solución?</p>
+            <hr/>
+            <div class="rta">1. La soluciones tienen dominio y son derivables en todo su dominio,
+                las funciones no necesariamente
+                2. La función satisface la ecuación diferencial 
+            </div>
         </div>
         <div id="tipos soluciones" class="tema2">
             <h2>tipos de soluciones</h2>
             <ul>
                 <li><a href="#Soluciones uniparametricas">Soluciones uniparametricas</a></li>
-                <li>n-parametricas</li>
+                <li><a href="#Soluciones n-parametricas">Soluciones n-parametricas</a></li>
                 <li></li>
             </ul>
         </div>
 
         <div id="Soluciones uniparametricas" class="tem3">
             <h2>Soluciones uniparametricas</h2>
-            <p>Se da cuando al resolver una ED, se obtiene UNA sola constante</p>            
+            <p>Se da cuando al resolver una ED, se obtiene UNA sola constante, lo que implica que solo 
+                tiene una solución 
+            </p>            
+
         </div>
 
         <div id="n-parametricas" class="tema3">
