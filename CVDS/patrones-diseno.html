@@ -1,0 +1,119 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+<script src="./../main.js"></script>
+    </head>
+    <body>
+        <div class="setter">
+            <button onclick="setStyles()">Cambiar</button>
+        </div>
+        <div id="Patrones de diseño" class="tema1">
+            <h1>Patrones de diseño</h1>
+            <p>Son formas de realizar cosas</p>
+            <p>Libro con todos los patronees: Design patters</p>
+        </div>
+
+
+        <div id="Ejemplos " class="tema2">
+            <h2>Ejemplos </h2>
+            <table>
+                <tr>
+                    <th>Patron de diseño</th>
+                    <th>Explicación</th>
+                    <td>Tipo de patron</td>
+                </tr>
+                <tr>
+                    <td>Fabrica abstracta</td>
+                    <td>Generar una clase o interfaz para crear familias de objetos</td>
+                    <td>Creacional</td>
+                </tr>
+                <tr>
+                    <td>Singleton</td>
+                    <td>Garantizar que una clase tenga una unica instancia</td>
+                    <td>Creacional</td>
+                </tr>
+                <tr>
+                    <td>Builder</td>
+                    <td>Separar la contrucción de un objeto de su representación. Se crea una clase. 
+                        NO es crear parametros opcionales. Evita que uno tenga q entrar al constructor y ver 
+                        el nombre, su posicion, si es opcional o no etc.
+                    </td>
+                    <td>Creacional</td>
+                </tr>
+                <tr>
+                    <td>Facade</td>
+                    <td>Crear una clase o aplicación con la que se comunica el usuario, y esta 
+                        se comunica con los microservicios. Esta NO ejecuta las operaciones, solo sabe a quien debe
+                    llamar. Es un controller</td>
+                    <td>Estructural</td>
+                </tr>
+
+                <tr>
+                    <td>Proxy</td>
+                    <td>Proporcioanr un sustituto o representante de otro objeto para controlar su acceso.
+                        El proxy hace algo de logica, la fachada solo llama
+                    </td>
+                    <td>Estructural</td>
+                </tr>
+                <tr>
+                    <td>Command (comando)</td>
+                    <td>Herencia :v</td>
+                    <td>Comportamiento</td>
+                </tr>
+                <tr>
+                    <td>Observer</td>
+                    <td>Suscribirse a algo, y luego actualizar lo requerido</td>
+                    <td>Comportamiento</td>
+                </tr>
+            </table>    
+        </div>
+        
+        <div id="Tipos de patrones" class="tema2">
+            <h2>Tipos de patrones</h2>
+            <ul>
+                <li>Creacionales</li>
+                <li>Estructurales</li>
+                <li>De Comportamiento</li>
+            </ul>
+        </div>
+        
+        <strong>Las clases abstractas deberían usarse para los atributos que tienen todos en comun, y las 
+            interfaces para metodos en común 
+        </strong>
+
+
+        <div id="Principios SOLID" class="tema2">
+            <h2>Principios SOLID</h2>
+            <p>Recomiendan buenas practicas especialmente para POO</p>
+            <ul>
+                <li><strong>S: Single Responsability. </strong> Cada clase debe dedicarse a una sola cosa</li>
+                <li><strong>O: Open/closed.</strong> Deben estar abiertas a extenderse y cerradas a modificarse</li>
+                <li><strong>L: Liskov substitution.</strong> Herencia x2 :v. "Si una clase no es capaz de comportarse al 100%
+                como el padre, es mejor hacer 2 clases padres". Las precondiciones y poscondiciones deberían ser
+                las mismas para todos los q hereden</li>
+                <li><strong>I: Interface Segregation. </strong> No debe haber una implementación de una interfaz donde un metodo
+                    no sea implementable para una clase, es mejor generar 2..* interfaces mas pequeñas</li>
+                <li><strong>D: Dependency inversion. </strong> 
+                    Un modulo de alto nivel no debe depender de uno de bajo nivel. Las clases no deberian conocer los detalles
+                de las clases con las que interactuan</li>
+            </ul>
+            <div id="Acomplamiento" class="tema3">
+                <h3>Acomplamiento</h3>
+                <p>Un programa que implemente todo lo anterior debe de tener bajo acoplamiento y alta cohesión</p>
+            </div>
+        </div>
+
+
+        
+        
+        
+
+        
+        
+        
+
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>

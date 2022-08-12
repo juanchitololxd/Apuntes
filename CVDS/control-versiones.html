@@ -1,0 +1,107 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+<script src="./../main.js"></script>
+    </head>
+    <body>
+        <div class="setter">
+            <button onclick="setStyles()">Cambiar</button>
+        </div>
+        <h1></h1>
+        <div id="Sistemas de control" class="tema1">
+            <h2>Sistemas de control</h2>
+            <ul>
+                <li>Centralizado</li>
+                <li>Distribuido (gitHub)</li>
+            </ul>
+            <p>Se debe hacer un branch * historia de usuario, y luego se hace merge con develop</p>
+            <p>Luego develop se sube a certificacion o master</p>
+        </div>
+
+
+
+
+        <div id="Sistema centralizado" class="tema">
+            <h>Sistema centralizado</h>
+            <p></p> 
+        </div>  
+
+        <div class="cornell">
+             <p class="ask">Diferencia entre sistema centralizado y distribuido?</p>
+            <hr/>
+            <div class="rta"> En el centralizado cada user tiene en su maquina solo su codigo, mientras
+                que en el distribuido todos tienen copia del repositorio
+            </div>
+        </div>
+        
+
+
+        centralizados: Pueden ser privados. La diferencia es q cada user tiene en su maquina solo su codigo
+        <strong>En lo personal me parece mala practica usar git rebase porque se está afectando la historia</strong>
+
+        <div id="GIT" class="tema2">
+            <h2>GIT</h2>
+            <div class="cornell">
+                 <p class="ask">Que es HEAD?</p>
+                <hr/>
+                <div class="rta">Es el commit sobre el que estoy trabajando</div>
+            </div>
+
+            <div class="cornell">
+                 <p class="ask">Si se escribe git checkout main^ que se quiere decir?</p>
+                <hr/>
+                <div class="rta">Poner  '^' luego del nombre de la rama es equivalente a decir "el padre de la rama</div>
+            </div>
+            <strong>Si se usa '~n' en vez de '^', se puede navegar n-niveles especificados </strong>
+        </div>
+
+
+        <table>
+            <tr>
+                <th>Ejercicio Cool</th>
+                <th>Rta</th>
+            </tr>
+            <tr>
+                <td>Mover forzosamente la rama main tres padres por detras de HEAD</td>
+                <td>git branch -f HEAD~3  ó git branch -f main {hashCommit}
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <th>Comando</th>
+                <th>Que hace</th>
+                <th>ejemplo</th>
+            </tr>
+            <tr>
+                <td>git rebase {rama}</td>
+                <td>Pone el commit de la actual rama por encima del de {rama}</td>
+                <td>git rebase main</td>
+            </tr>
+            <tr>
+                <td>git reset {hashCommit o HEAD~{n}}</td>
+                <td>Borra los commits realizados y devuelve el HEAD a donde se indique. Para que funcione
+                    En remoto se debe escribir git revert {hashCommit o HEAD~{n}}
+                </td>
+                <td>git reset HEAD~2</td>
+            </tr>
+            <tr>
+                <td>git cherry-pick {hashCommit1} {hashCommit2} ... {hashCommitn}</td>
+                <td>Copia la infomarción de los commits sobre la rama actual</td>
+                <td> git cherry pick as324 acd23</td>
+            </tr>
+            <tr>
+                <td>git tag {nombreTag} {hashCommit}</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>

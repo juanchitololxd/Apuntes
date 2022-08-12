@@ -9,16 +9,30 @@
             <button onclick="setStyles()">Cambiar</button>
         </div>
         <h1>Redes</h1>
+        <p>Conjunto de sistemas de computo conectados entre sí (si intercambian información). Cada elemento debe ser autonomo</p>
+        <p>Busca que el usuario pueda acceder a todas las funcionalidades de la red de forma sencilla (como enviar un correo)</p>
+        <p>Se espera que una red sea:</p>
+        <ul>
+            <li><strong>Escalable</strong>Que pueda crecer sin afectar la velocidad del servicio</li>
+            <li><strong>De calidad</strong> y eficiencia. La calidadd es subjetiva </li>
+            <li><strong>Segura</strong>En terminos de que el protocolo va a funcionar bien</li>
+            <li><strong>Convergente</strong> El trafico de info debe manejar distintos tipos (texto, audio, video etc) por la misma red.</li>
+            <li><strong>Administrable</strong> Facilidad para administrar, mantener y detectar fallas</li>
+            <li><strong>Eficiente</strong></li>
+        </ul>
+
         <div id="estandares" class="tema2">
             <h2>estandares</h2>
+            <p>Conjunto de reglas</p>
             <ul>
-                <li>JURE. Promovidas por organizaciones como ISO, IEEE etc</li>
-                <li>FACTO. Promovidos por entes o grupos de personas, es un "estandar informal", son mas conocidos
+                <li>JURE. Promovidas por organizaciones como ISO, IEEE, IETF etc</li>
+                <li>FACTO. Promovidos por entes o grupos de personas, es un "estandar informal", son
                     como buenas practicas
                 </li>
             </ul>
-            <p>Ejemplos:</p>
         </div>
+
+
         
         <div id="clases" class="tema2">
             <h2>clases</h2>
@@ -33,32 +47,39 @@
                 </tr>
                 <tr>
                     <td>HAN</td>
-                    <td>Home Personal Network</td>
+                    <td>Home Personal Network (Domotica)</td>
                     <td>Casa</td>
                     <td></td>
-                    <td></td>
+                    <td>Ejemplo: La red formada por la domótica de la casa.</td>
                 </tr>
                 <tr>
                     <td>PAN</td>
-                    <td>Personal Area Network</td>
+                    <td>Personal Area Network (Red de equipos personales. Pc y Cel)</td>
                     <td>Casa</td>
                     <td></td>
-                    <td></td>
+                    <td>LAN 1 .. * PAN. Ej: Conexión entre un auricular bluetooth y un smartphone</td>
                 </tr>
                 <tr>
                     <td>LAN</td>
                     <td>Local Area Network</td>
                     <td>100m</td>
                     <td>El dueño del sitio</td>
-                    <td>Los nodos son switches (conmutación). Alta velocidad</td>
+                    <td>Los nodos son switches (conmutación). Alta velocidad. Ej: La de mi casa :v</td>
                 </tr>
                 <tr>
                     <td>MAN</td>
                     <td>Metropolitan Area Network</td>
                     <td>Ciudad</td>
-                    <td>Empresas con varias sucursales</td>
+                    <td>Tercero</td>
+                    <td>Ej: Una red entre sucursales de una empresa</td>
+                </tr>
+                <tr>
+                    <td>GAN</td>
+                    <td>Global Area Network</td>
+                    <td>Permiten una conexión internacional </td>
                     <td></td>
-                    <td></td>
+                    <td>Ej: Son usadas por empresas que estan posicionadas a nivel internacional.
+                         Las agrupan mediante cables submarinos internacionales o transmisión por satélite.</td>
                 </tr>
                 <tr>
                     <td>WAN</td>
@@ -67,6 +88,14 @@
                     
                     <td></td>
                     <td>Los nodos son routers (Enrutación). Menor velocidad</td>
+                </tr>
+
+                <tr>
+                    <td>CAN</td>
+                    <td>Campus Area Network</td>
+                    <td>Ps de un campus :v</td>
+                    <td>La U :v</td>
+                    <td>Ej: Ps en la javeriana tienen un lab para implementar una CAN</td>
                 </tr>
             </table>
             <p>En el caso de las MAN, cada sucursal puede tener internamente una LAN</p>
@@ -94,9 +123,26 @@
 
 
         
-
-
+        <div id="IETF" class="tema2">
+            <h2>IETF</h2>
+            <p>generan los estandares de internet</p>
+            <p>No son ni de Jure ni de Facto</p>
+            <ul>
+                <li>Generan RFC: Request for comments</li>
+            </ul>
+        </div>
         
+
+        <div class="cornell" id="id1">
+            <p class="ask">
+             Que pasaría si uno se conectara directamente a una WAN o algo asi?
+            </p>
+            <hr/>
+            <div class="rta">
+             Se podría cambiar las configuraciones globales
+            </div>
+           </div>
+         
         
     </body>
 </html>
