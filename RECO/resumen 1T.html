@@ -1,0 +1,302 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+    <script src="./../main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="setter">
+        <button onclick="setStyles()">Cambiar</button>
+    </div>
+    <div class="summary">
+        <div>
+            <div id="Historia internet" class="tema2">
+                <h2>Historia internet</h2>
+                <ul>
+                    <li>1969 ARPANET: red de computadoras usada para enviar datos militares</li>
+                    <li>Como se quedó obsoleto se formaron los protocolos TCP/IP</li>
+                </ul>
+            </div>
+            <div class="cornell">
+                <p class="ask">Diferencia OSI y TCP/IP</p>
+                <hr />
+                <div class="rta">La primera es un modelo y la otra es una arquitectura</div>
+            </div>
+        </div>
+
+        <div id="ISP" class="tema2">
+            <h2>ISP</h2>
+            <ul>
+                <li>Proveedor de servicios de internet fisicos (Claro, tigo etc) o logicos (netflix y similares)</li>
+            </ul>
+            <li>Para enviar mensajes entre personas (nacional), se envía al ISP fisico, y este se conecta a NAC (Network
+                access control) y pasa el
+                msg al otro Proveedor
+            </li>
+            <h3 id="Subdivisiones">Subdivisiones</h3>
+            <ul>
+                <li>ISP Local: Proporciona a los usuarios el servicio mas directo.
+                </li>
+                <li>ISP regional: Conecta la local con la principal</li>
+                <li>ISP Principal (backbone): Empresas de telecomunicaciones globales</li>
+            </ul>
+        </div>
+    </div>
+    <div class="summary">
+
+
+
+        <div class="cornell">
+            <p class="ask">Estandares</p>
+            <hr />
+            <div class="rta">
+                <p>Conjunto de reglas</p>
+                <ul>
+                    <li>IETF: Genera los estandares de internet. Generan request for comments (RFC)</li>
+                    <li>JURE. Promovidas por organizaciones como ISO, IEEE, IETF etc</li>
+                    <li>FACTO. Promovidos por entes o grupos de personas, es un "estandar informal".</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cornell">
+            <p class="ask">Caracteristicas de una red</p>
+            <hr />
+            <div class="rta">
+                <strong>CESAREA</strong>
+
+                <ul>
+                    <li><strong>C</strong>onvergente (manejo de distintos tipos de info)</li>
+                    <li><strong>E</strong>ficiente</li>
+                    <li><strong>S</strong>egura</li>
+                    <li><strong>A</strong>dministrable</li>
+                    <li><strong>E</strong>scalable</li>
+                </ul>
+                <p>Grafica, relojes, candado, reloj configurable, todo a gran escala</p>
+
+            </div>
+        </div>
+        <div class="cornell">
+            <p class="ask">Que es una red</p>
+            <hr />
+            <div class="rta">Conjunto de sistemas computo autonomos conectados entre sí.</div>
+        </div>
+    </div>
+
+    </div>
+
+    <div id="clases" class="tema2">
+        <h2>clases</h2>
+        <table>
+            <tr>
+                <th>Clase</th>
+                <th>Definición</th>
+                <th>Cubrimiento Distancia</th>
+                <th>Administracion</th>
+                <th>Extra</th>
+
+            </tr>
+            <tr>
+                <td>HAN</td>
+                <td>Home Personal Network (Domotica)</td>
+                <td>Casa</td>
+                <td></td>
+                <td>Ejemplo: La red formada por la domótica de la casa.</td>
+            </tr>
+            <tr>
+                <td>PAN</td>
+                <td>Personal Area Network (Red de equipos personales. Pc y Cel)</td>
+                <td>Casa</td>
+                <td></td>
+                <td>LAN 1 .. * PAN. Ej: Conexión entre un auricular bluetooth y un smartphone</td>
+            </tr>
+            <tr>
+                <td>LAN</td>
+                <td>Local Area Network</td>
+                <td>100m</td>
+                <td>El dueño del sitio</td>
+                <td>Los nodos son switches (conmutación). Alta velocidad. Ej: La de mi casa :v</td>
+            </tr>
+            <tr>
+                <td>MAN</td>
+                <td>Metropolitan Area Network</td>
+                <td>Ciudad</td>
+                <td>Tercero</td>
+                <td>Ej: Una red entre sucursales de una empresa</td>
+            </tr>
+            <tr>
+                <td>GAN</td>
+                <td>Global Area Network</td>
+                <td>Permiten una conexión internacional </td>
+                <td></td>
+                <td>Ej: Son usadas por empresas que estan posicionadas a nivel internacional.
+                    Las agrupan mediante cables submarinos internacionales o transmisión por satélite.</td>
+            </tr>
+            <tr>
+                <td>WAN</td>
+                <td>Wide Area Network</td>
+                <td>Pais-Continente</td>
+
+                <td></td>
+                <td>Los nodos son routers (Enrutación). Menor velocidad</td>
+            </tr>
+
+            <tr>
+                <td>CAN</td>
+                <td>Campus Area Network</td>
+                <td>Ps de un campus :v</td>
+                <td>La U :v</td>
+                <td>Ej: Ps en la javeriana tienen un lab para implementar una CAN</td>
+            </tr>
+        </table>
+        <p>En el caso de las MAN, cada sucursal puede tener internamente una LAN</p>
+        <strong>La administración abarca el quien compra los equipos, uso, configuraciones etc</strong>
+
+    </div>
+    <div class="summary">
+        <div id="Arquitectura" class="tema2">
+            <h2>Arquitectura</h2>
+            <p>Conjunto de <a href="#Capas">Capas</a>, <a href="#Protocolos">Protocolos</a> e <a
+                    href="#interfaces">interfaces</a>
+                que facilitan el diseño, programación, operación y mantenimiento de las tareas que maneja una red</p>
+
+            <img src="./OTROS/ej-capas-protocolos.png" alt="">
+        </div>
+
+        <div>
+            <div id="Capas" class="tema3">
+                <h3>Capas</h3>
+                <ul>
+                    <li>Mecanismos que permiten reducir complejidad, ya que cada capa tiene su función definida</li>
+                    <li>Cada una tiene un <a href="#PDU">PDU</a></li>
+                </ul>
+            </div>
+
+            <div class="cornell" id="PDU">
+                <p class="ask">PDU</p>
+                <hr />
+                <div class="rta">Procotol data Unit. Posee información de control necesaria.</div>
+            </div>
+
+            <div id="Protocolos" class="tema3">
+                <h3>Protocolos</h3>
+                <p>Reglas o formatos para que las capas de diferentes maquinas puedan comunicarse</p>
+            </div>
+
+            <div id="interfaces" class="tema3">
+                <h3>interfaces</h3>
+                <p>Define que operaciones y servicios ofrece la capa inferior a la superior</p>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Capa</th>
+                <th>Funciones</th>
+                <th>PDU</th>
+
+            </tr>
+            <tr>
+                <td>Aplicación</td>
+                <td>
+                    <ul>
+                        <li>Soporta las aplicaciones de la red (No son netflix ni mmds de ese tipo)</li>
+                        <li>Define estandares de red</li>
+                        <li>Asuntos de seguridad</li>
+                    </ul>
+                </td>
+                <td>Mensaje</td>
+            </tr>
+            <tr>
+                <td>Transporte</td>
+                <td>
+                    <ul>
+                        <li>Se asegura de que los mensajes pasen bien al otro lado (control de errores)</li>
+                        <li>Determina el <a href="#tipo de servicio">tipo de servicio</a></li>
+                        <li>Mantiene la conexión de extremo a extremo, la inicia y la cierra</li>
+                        <li>Control de congestion.</li>
+                        <li>Administra diferentes conexiones de usuario</li>
+                        <li>Control de congestión (cantidad)</li>
+                        <li>Asuntos de seguridad</li>
+                    </ul>
+                </td>
+                <td>Segmento</td>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td>
+                    <ul>
+                        <li>Controla el funcionamiento de la subred</li>
+                        <li>Facturación a los usuarios de los datos gastados por ejemplo</li>
+                        <li>Manejo de rutas REVISAR</li>
+                        <li>Control de congestión (OSI)</li>
+                        <li>Solución de problemas de red</li>
+                        <li>Fragmentación de los paquetes, para que puedan pasar de una red a otra</li>
+                    </ul>
+                </td>
+                <td>Packages</td>
+            </tr>
+            <tr>
+                <td>Enlace</td>
+                <td>
+                    <ul>
+                        <li>Soluciona problemas con los frames (no enviados o duplicados)</li>
+                        <li>Manejo de <a href="#buffer">buffers</a> para guardar temporalmente los frames</li>
+                        <li>Control de flujo (Velocidad)</li>
+                    </ul>
+                </td>
+                <td>Frames</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>
+                    <ul>
+                        <li>Transmite los bits por el medio fisico</li>
+                        <li>Se preocupa por la parte electrica </li>
+                        <li><a href="#Tipo de comunicación">Tipo de comunicación</a></li>
+                    </ul>
+                </td>
+                <td>"Bits"</td>
+            </tr>
+        </table>
+
+        <div>
+            <div id="tipo de servicio" class="tema3">
+                <h3>tipo de servicio</h3>
+                <ul>
+                    <li>OAC: Orientado a conexión. Aquí antes de enviar los datos, se establece comunicación con el
+                        destino</li>
+                    <li>NOAC: Se envían datos suponiendo que el destino está abierto</li>
+                </ul>
+            </div>
+            <div id="Tipo de comunicación" class="tema3">
+                <h3>Tipo de comunicación</h3>
+                <ul>
+                    <li>Duplex:</li>
+                    <li>Simplex</li>
+                </ul>
+            </div>
+            <br><br>
+            <img src="./OTROS/osi-tcp.png" alt="">
+            <br></br>
+            <blockquote>
+                Un tren <strong>Transporta</strong> un mensaje a traves de una <strong>Red</strong> que
+                <strong>Enlaza</strong> 2 puntos <strong>Fisicos</strong>
+            </blockquote>
+            <br></br>
+            <blockquote>
+                MESOPOTAMIA y FB
+            </blockquote>
+
+        </div>
+    </div>
+
+    <iframe src="./OTROS/Resumen capa aplicación.pdf" style="width:100%; height: 1000px" frameborder="0"></iframe>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer="" />

@@ -14,7 +14,7 @@
   --border-radius: 4px;
 }
 html {
-  padding: 15%;
+  padding: 8%;
   background-color: var(--main-bg-color);
   color: var(--color-text-primary);
 }

@@ -1,0 +1,132 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+    <script src="./../main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="setter">
+        <button onclick="setStyles()">Cambiar</button>
+    </div>
+    <div class="summary">
+        <div class="cornell">
+            <p class="ask">Campo direccional</p>
+            <hr />
+            <div class="rta">
+                <ul>
+                    <p>Grafico que tiene el conjunto de las pendientes de la función</p>
+                    <p>Se puede a partir de este determinar la solución de un PVI ya que en base a este se pueden
+                        dibujar curvas soluciones</p>
+                </ul>
+            </div>
+        </div>
+        <div id="Metodo isoclinas" class="tema2">
+            <h2>Metodo isoclinas</h2>
+            <p>PASO 0: \(\frac{dy}{dx} = 0\)</p>
+            <img src="./OTROS/metodo-isoclina.png" alt="">
+        </div>
+
+    </div>
+    <br></br>
+    <table>
+        <tr>
+            <th>ED</th>
+            <th>Aquella que</th>
+            <th>Método de solución</th>
+        </tr>
+        <tr>
+            <td>Separable</td>
+            <td>\(\frac{dy}{dx} = g(x) h(y)\)</td>
+            <td>
+                <ol>
+                    <li>ubicar a cada lado de la igualdad las variables que tengan la misma var dependientes.</li>
+                    <li>Integrar :v</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>Lineal</td>
+            <td>\(a_1(x)\frac{dy}{dx} =+ a_0(x)y = f(x)\)</td>
+            <td>            <ul>
+                <li>Hallar factor integrante \(e^{\int{p(x)dx}} = miu(x)\)</li>
+                <li>\(\frac{d miu(x)*y}{dx}= miu(x)*f(x)\)</li>
+
+            </ul></td>
+        </tr>
+
+        <tr>
+            <td>Lineal a trozos</td>
+            <td>ED Lineal donde f(x) está definida a trozos</td>
+            <td>            
+                <ul>
+                <li>Resolver la ED para cada intervalo</li>
+                <li>Si es un PVI. recordar que f(x) es continua, por ende: 
+                    <ol>
+                        <li>Igualar sus 2 ecuaciones</li>
+                        <li>Evaluar en el punto donde es discontinua f(x)</li>
+                    </ol>
+                </li>
+
+            </ul></td>
+        </tr>
+        <tr>
+            <td>Exacta</td>
+            <td>
+                <ul>
+                    <li>puede ser escrita de la forma \(M(x,y)dx + N(x, y)dy = 0\)</li>
+                    <li> \(\partial{M}{y} = \partial{N}{x}\)</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li>\(f(x,y) = \int{M(x,y)}dx   + g(y)\).</li>
+                    <li>\(\frac{\partial{f(x,y)}}{\partial{y}} = N(x, y)\). De aquí de despeja g'(y)</li>
+                    <li>Integrar \(g'(y)\)</li>
+                    <li>Reemplazar el paso anterior en el paso 1, dejando la constante del lado derecho y lo otro del lado izquierdo</li>
+                </ol>
+                <strong>Si se integra N(x,y), será respecto a "y". La cte estará en terminos de x, derivada parcial respecto a X = M(x, y)</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>Sustitución homogenea</td>
+            <td>Aquella que \(f(tx, ty) = t*f(x, y)\)</td>
+            <td>Sustituir, buscando llevar la ED a una de variables separables</td>
+        </tr>
+        <tr>
+            <td>Sustitución</td>
+            <td>\( \frac{dy}{dx} = f(Ax + By + C)\)</td>
+            <td>\( u = Ax + By + C \). Hallar \(\frac{du}{dx}\) y reemplazar</td>
+        </tr>
+        <tr>
+            <td>Sustitución homogenea v2</td>
+            <td>
+                 <ul>
+                    <li>\(M(x, y)dx + N(x, y)dy = 0  \)</li>
+                    <li> \(tN(x, y) =  N(tx, ty)\)</li>
+                    <li> \(tM(x, y) = M(tx, ty)\)</li>
+                 </ul>M y N tienen el mismo grado</td>
+            <td>Sustituir, buscando llevar la ED a una de variables separables</td>
+        </tr>
+        <tr>
+            <td>Sustitución Bernoulli</td>
+            <td>Aquella que \( \frac{dy}{dx} + P(x)y = f(x)y^n\)</td>
+            <td>
+                <ul>
+                    <li>Multiplicar la ED por \( \frac{1}{y^n} \)</li>
+                    <li>\( u = y^a  ; a = 1-n \)</li>
+                    <li>Integrar la ED como una lineal</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer="" />

@@ -1,0 +1,90 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+    <script src="./../main.js"></script>
+</head>
+
+<body>
+    <div class="setter">
+        <button onclick="setStyles()">Cambiar</button>
+    </div>
+    <h1 id="Resumen Capitulo 1">Resumen Capitulo 1</h1>
+
+    <div class="summary">
+        <div class="cornell">
+            <p class="ask">Ec Diferencial</p>
+            <hr />
+            <div class="rta">Ec que contiene las derivadas de una o mas funciones desconocidas ( vars dependientes)
+                respecto a una o mas vars independientes
+            </div>
+        </div>
+    
+        <div class="cornell">
+            <p class="ask">Variable dependiente en una ED</p>
+            <hr />
+            <div class="rta">La que tiene derivadas en la ecuación</div>
+        </div>
+    
+        <div class="cornell">
+            <p class="ask">Que es una solución de una ED?</p>
+            <hr />
+            <div class="rta">Una función que satisfaga la ecuación 
+            </div>
+        </div>
+        <div id="Tipos de soluciones" class="tema2">
+            <h2>Tipos de soluciones</h2>
+            <ul>
+                
+                <li>Explicita: La variable independiente ya está despejada</li>
+                <li>Implícita: está de la forma G(x, y) = 0. Aquí toca derivar respecto a una var:
+                    <img src="./OTROS/der implicita.png" alt="">
+                </li>
+            </ul>
+        </div>
+    
+    
+        <div class="cornell">
+             <p class="ask">PVI y PVF</p>
+            <hr/>
+            <div class="rta">Ambos son problemas que relacionan ED. La diferencia es que en PVF
+                las condiciiones iniciales tienen almenos 2 valores distintos de x para una misma función
+            </div>
+        </div>
+    
+    
+        <div class="cornell">
+            <p class="ask">Teorema de la existencia y unicidad</p>
+           <hr/>
+           <div class="rta">si f(x,y) y su derivada parcial respecto a y es continua, puedo garantizar que
+               la solución es unica. <strong>SOLO APLICA PARA PVI</strong></div>
+       </div>    
+    
+    </div>
+    <div id="Clasificaciones" class="tema2">
+        <h2>Clasificaciones de las ED</h2>
+        <p>Puede pertenecer a varias clasificaciones</p>
+        <ul>
+            <li><strong>Tipo:</strong>
+                <ul>
+                    <li>Ecuación diferencial Parcial: Tiene derivadas parciales</li>
+                    <li>Ecuacion diferencial Ordinaria: Ps no tiene derivadas parciales :v</li>
+                </ul>
+            </li>
+            <li><strong>Orden:</strong> mayor derivada en la ecuación (distinto al grado de la ecuación). <strong>Ej: Si aparece
+                    (d^2y/dx^2)^5, el orden es el 2</strong></li>
+            <li><strong>Linealidad:</strong> la var independiente puede realizar cualquier operación, pero la dependiente no puede
+                puede tener operaciones con sigo misma ni con sus derivadas (diferente a una suma o vainas así) </li>
+            <li><strong>Autonoma</strong> Si la variable independiente no aparece explícitamente.</li>
+        </ul>
+        <strong>TOLA</strong>
+    </div>
+
+
+    <iframe src="./OTROS/resumen 1-3.pdf"  frameborder="0"></iframe>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer="" />
