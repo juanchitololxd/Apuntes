@@ -1,0 +1,152 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+<script src="./../main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <div class="setter">
+            <button onclick="setStyles()">Cambiar</button>
+        </div>
+        
+
+        <div id="Frameworks de persistencia" class="tema1">
+            <h1>Frameworks de persistencia</h1>
+            Ejemplos:
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
+
+        <div id="Frameworks  ORN" class="tema1">
+            <h1>Frameworks  ORM</h1>
+            <p>Librerias que cogen los objetos y los llevan a un medlo relacional y viceversa</p>
+            <ul>
+                <li>Para guardar en BD: metodo .save()</li>
+                <li>Para cargar el objeto desde BD: .load()</li>
+                <li>El framework genera las tablas en base al digrama de clases</li>
+                <li>JPA define el lenguaje con el que puedo buscar, guardar o cargar cosas</li>
+                <li>Ejemplos: Hibernate</li>
+                <li>Ventajas: Si se migra deuna BD a otra, no hay que reescribir nada</li>
+            </ul>
+        </div>
+
+
+        <div id="Impedancia" class="tema1">
+            <h1>Impedancia</h1>
+            Diferencia que hay entre tener la info en objetos y persistirla en un modelo relacional
+            Diferencias:
+            <ul>
+                <li>            Las relaciones se dan direcciones de memoria
+                    </li>
+                    <li>Gestión de registro de objetos en bases de datos</li>
+            </ul>
+            
+
+            <div id="Persisitir objetos" class="tema2">
+                <h2>Persisitir objetos</h2>
+                <p>LLevar objetos  a una BD</p>
+            </div>
+            
+            <div id="Reconstrucción de objetos" class="tema2">
+                <h2>Reconstrucción de objetos</h2>
+                <p>Pasar de la BD los objetos</p>
+            </div>
+            
+        </div>
+
+
+        <div id="Metodologias de desarrllo" class="tema2">
+            <h2>Metodologias de desarrllo</h2>
+            <div id="Metodologia en cascada" class="tema3">
+                <h3>Metodologia en cascada</h3>
+                <ul>
+                    <li>Requerimientos</li>
+                    <li>Diseño</li>
+                    <li>Implementación</li>
+                    <li>Verificación</li>
+                    <li>Mantenimiento</li>
+                </ul>
+                <ul>
+                    <li>Tienen problemas</li>
+                </ul>
+            </div>
+            
+            <div id="Metodologias agiles" class="tema2">
+                <h>Metodologias agiles</h>
+                <ul>
+                    <li>Entregas parciales en periodos cortos de tiempo</li>
+                    <li>Por cada entrega se ejecuta:
+                        <ul>
+                            <li>Plan</li>
+                            <li>Diseño</li>
+                            <li>Test</li>
+                            <li>Construccion</li>
+                            <li>Aceptación</li>
+                        </ul>
+                    </li>
+                    <li>ejemplos: SCRUM, Xtreme, SCRUMBan</li>
+                </ul>
+
+
+                <div id="Metodologia SCRUM" class="tema3">
+                    <h3>Metodologia SCRUM</h3>
+                    <ul>
+                        <li>Permite inspeccionar software real de trabajo (cada 2 -4 semanas) (Esprints)</li>
+                        <li>Es un framework: Conjunto de reglas modificables</li>
+                        <li>Aquí los equipos se auto organizan (no es tan marcado el modelo jefe-empleado)</li>
+                        <li>Los requerimientos se capturan en un "product backlog", lista de requerimientos</li>
+                        <li>Hay certificaciones</li>
+                    </ul>
+                    roles:
+                    <ul>
+                        <li>Product Owner: Conoce al detalle el caso de negocio </li>
+                        <li>Scrum master: Garantiza que se cumpla SCRUM</li>
+                        <li>Team: team :v, desarrolladores, arquitectos. Deben estar asignados a tiempo completo</li>
+                    </ul>
+
+                    reuniones:
+                    <ul>
+                        <li>Sprint planning: Se delega a cada desarrollador las historias de usuario</li>
+                        <li>Sprint review</li>
+                        <li>Sprint retrospective: que funciono, que no funciono, se asi hasta para felicitar a los desarrolladores</li>
+                        <li>Daily: Se dice lo q se hizo, y lo q hara ese dia + bloqueos</li>
+                    </ul>
+                    Artefactos:
+                    <ul>
+                        <li>Product backlog</li>
+                        <li>Sprint backlog</li>
+                        <li>Burndown charts (grafico)</li>
+                    </ul>
+
+
+
+
+                </div>
+
+
+                <div id="Manifiesto agil" class="tema2">
+                    <h2>Manifiesto agil</h2>
+                    <ul>
+                        <li>Mejor interacciones en vez de procesos y herramientas</li>
+                        <li>Software que funciona sobre documentacion exhaustiva</li>
+                        <li>Colaboración con el cliente sobre negociación de contratos</li>
+                        <li>Responder ante el cambio sobre seguir un plan</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>

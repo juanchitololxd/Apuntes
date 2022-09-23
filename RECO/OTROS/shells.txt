@@ -1,0 +1,93 @@
+
+Todos los alias se ubican en el archivo que contenga estos 
+Por ejemplo: en free con csh, el archivo es /etc/csh.cshrc
+
+
+
+
+======================== L2 =========================================
+
+
+
+PERSONAL:  exec_shell (Alias) UNIX
+	Ejecuta un shell que esté en el path base
+		alias exec_shell sh /tmp/\!:1
+
+	Ejemplo: si existe /tmp/L3/procesos.sh, ejecutará este shell
+		exec_shell L3/procesos.sh
+PERSONAL:  manual (Alias) UNIX
+	Muestra ejemplos y cosas importantes relacionadas al shell
+		alias manual grep -i -A 20 \!:1 /tmp/README.md
+
+	Ejemplo: si existe /tmp/L3/procesos.sh, ejecutará este shell
+		exec_shell L3/procesos.sh
+
+
+LS UNIX 
+	Realice un Shell que liste los archivos en un directorio, inclusive los ocultos, dado y permita 
+		Ordenarlo por las diferentes opciones e indicar la cantidad por grupos:
+			Mas reciente, antiguo
+			Menor o mayor tamaño
+			tipo de archivo
+
+		Buscar con condiciones:
+			Inicie o termine con una cadena
+			Contenga una cadena
+
+		Menu infinito. Usuario indica cuando quiere salir.
+
+
+LS LINUX
+
+COMANDOS BUSQUEDA O VISUALIZACION DE ARCHIVOS (Alias) UNIX / LINUX
+	Buscar un archivo / parte de un archivo. La salida será las ubicaciones y nombres de los archivos. Al final el numero de resultados.
+
+	Buscar una palabra / expresion regular. La salida será las lineas en las que se encontró. Al final el numero de resultados.
+
+	alias Buscar_archivo find \!:1 -type -f -iname "\!:2"; find \!:1 -type -f -iname "\!:2" | wc -l
+	alias Buscar_palabra grep -i '\!:1' \!:2; grep -i \!:1 \!:2 | wc -l
+
+
+	Ejemplos: 
+
+	Buscará desde la raiz todos los archivos que empiecen con 'file' y terminen en 't'
+		Buscar_archivo / file*t
+
+	Buscará 'h*la' en folder/file.txt
+
+		Buscar_palabra h*la folder/file.txt
+
+
+
+
+REVISION DE LOG UNIX
+
+REVISION DE LOG LINUX
+
+============================================= L3 ==============================================
+
+CONFIGURAR TAREA PARA EJECUTARSE AL INICIAR UNIX:
+
+
+	Programar_tarea (Alias)
+
+		Programar_tarea exec_shell crontab.sh
+
+		rm /tmp/shells/L3
+		crontab -l > crontab.txt
+		echo "$1" >> crontab.txt
+
+	Procesos (smb)
+
+	Archivos_small
+		mas pequeños a partir de tanto size.
+		find $1 -type f -size +$2 -exec ls -lhRs {}\;| awk '{print $5, $9}' | sort -k 1 -h | head -$3
+
+
+
+
+Falta:
+	Pasar los de windows a pos windows :v
+	Documentacion (me la fume re verde xD)
+
+

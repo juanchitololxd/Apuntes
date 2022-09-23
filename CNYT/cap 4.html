@@ -1,0 +1,105 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+<script src="./../main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <div class="setter">
+            <button onclick="setStyles()">Cambiar</button>
+        </div>
+        <div id="Estados cuanticos" class="tema1">
+            <h1>Estados cuanticos</h1>
+            <ul>
+                <li>Los estados son probabilísticos en un universo, pero
+                    determinísticos en el multiverso.
+                </li>
+                <li>El estado está representado por un vector de numeros complejos \([c_0, c_1, ... c_n]^T\)</li>
+            </ul>
+            <div id="Estados" class="tema2">
+                <h2>Estados</h2>
+                <ul>
+                    <li>\( | X_0 > |-> [1,0,0,...,0]^T\)</li>
+                    <li>\( | X_1 > |-> [0,1,0,...,0]^T\)</li>
+                    <li>\( | X_n > |-> [0,0,0,...,n]^T\)</li>
+                </ul>
+            </div>
+
+
+            <div id="Vector de superposición" class="tema2">
+                <h2>Vector de superposición</h2>
+                <p>\( | y > = [C_0,C_1,...,C_n]^T\)</p>
+                <p>Para calcular la probaBIlidad de que observación:</p>
+                <p>\( P(x_i) =  \frac{|C_i|^2}{\sum_{j = 0}^{n-1} {|C_j | ^2}} \)</p>
+                <p>\( | y> = C * | z> \), aquí los 2 vectores representan el mismo estado</p>
+                <p>Procedimiento para saber si 2 vectores representan el mismo estado:</p>
+                <ol>
+                    <li>x  = \(\frac{V_{1}[i]}{V_{2}[i]}\) </li>
+                    <li> \( x * V_2\)</li>
+                    <li>Si el resultado anterior es igual al otro vector, entonces representan el mismo estado</li>
+                    
+                </ol>
+            </div>
+
+            <div id="Calcular amplitud de transición" class="tema2">
+                <h2>Calcular amplitud de transición de |a> a |b></h2>
+                <ol>
+                    <li>Normalizar los 2 vectores</li>
+                    <li>Calcular < b, a> ; b = bra(b)</li>
+
+                </ol>
+            </div>
+            
+
+            <div class="summary">
+                <div class="cornell">
+                     <p class="ask">Longitud del ket</p>
+                    <hr/>
+                    <div class="rta">Hallas la magnitud de \(|y>\)</div>
+                </div>
+                <div class="cornell">
+                     <p class="ask">Bra</p>
+                    <hr/>
+                    <div class="rta">\(bra(|y>) = < y| = |y>^\dagger\)</div>
+                </div>
+                
+            </div>
+
+            
+
+
+            <div id="Experimento - Spinner" class="tema2">
+                <h2>Experimento - Spinner</h2>
+                <p>|ψ⟩ = c0| ↑ ⟩ + c1| ↓ ⟩</p>
+
+                <ul>
+                    <li> \(|↑ ⟩ = [1,0]^T\)</li>
+                    <li> \(|↓ ⟩ = [0,1]^T\)</li>
+                </ul>
+            </div>
+
+
+            <div id="Observables " class="tema1">
+                <h1>Observables </h1>
+                <ul>
+                    <li>El resultado de una Observación es siempre un valor propio del operador
+                        hermitiano</li>
+                    <li>A cada observable físico le corresponde una matriz
+                        hermitiana.</li>
+
+                    <li> El resultado e una observacipon es siempre un valor propio del operador hermitiano</li>
+                </ul>
+            </div>
+            
+            
+
+            
+            
+            
+        </div>
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>

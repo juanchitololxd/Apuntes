@@ -1,0 +1,327 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+    <script src="./../main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="setter">
+        <button onclick="setStyles()">Cambiar</button>
+    </div>
+
+
+    <div id="Capa fisica" class="tema1">
+        <h1>Capa fisica</h1>
+        <ul>
+            <li>Busca transmitir por un canal de comunicación (cable, onda etc)</li>
+            <li>Gestiona los voltajes, el tipo de comunicación, como y cuando desconectarse</li>
+            <li>Transmite de forma guiada y no guiada</li>
+            <li>pg 3</li>
+        </ul>
+    </div>
+
+    <div id="Cableado estructurado" class="tema2">
+        <h2>Cableado estructurado</h2>
+        <ul>
+            <li>Indica como se organizan los cables, accesorios y dispostivos de interconexion en una red</li>
+            <li>la EIA, ANSI/TIA definieron estandares para esto</li>
+            <li>Area de trabajo
+                <ul>
+                    <li>Donde estan todos los implementos que van desde el faceplate hasta el dispositivo</li>
+                    <li>Area promedio: \(10 m^2\)</li>
+                </ul>
+            </li>
+            <li>Cableado horizontal
+                <ul>
+                    <li>Elementos que unen el area del trabajo con el centro de cables del piso</li>
+                    <li>Topologia estrella</li>
+                    <li>La distancia es de 100 metros aprox</li>
+                </ul>
+            </li>
+            <li>Centro de cables o closet de telecomunicaciones
+                <ul>
+                    <li>Existe uno por piso</li>
+                    <li>Posee un patch panel: Objeto con puerto RJ-45 </li>
+                    <li>Area promedio: \(10 m^2\)</li>
+                </ul>
+            </li>
+            <li>Cableado vertical: El que conecta los closet de telecomunicaciones, usa topologia estrella</li>
+        </ul>
+
+        <img src="./OTROS/orden-cables.png" alt="">
+        <ul>
+            <li>Cables directos: Usados para trasmitir info entre equipos IGUALES. Para eso se usa un estandar distinto
+                en cada extremos del cable
+            </li>
+            <li>Cables cruzados: Usados para trasmitir info entre equipos DISTINTOS. Para eso se usa el mismo estandar
+                en
+                ambos extremos del cable
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div id="Transmisiones guiadas" class="tema2">
+        <h2>Transmisiones guiadas</h2>
+        <div id="Cobre" class="tema3">
+            <h3>Cobre</h3>
+            <p>TP: Pares trenzados, es el mas barato y facil de usar</p>
+            <ul>
+                <li>UTP: Cable no blindado</li>
+                <li>FTP: Blindaje general</li>
+                <li>STP: No blindado</li>
+                <li></li>
+            </ul>
+            <img src="./OTROS/categorias-cables.webp" alt="">
+            <br/>
+            <strong>A mayor categoria, está mas entorchado, lo que implica que el campo electromagnetico es menor,
+                por eso se consiguen tales velocidades
+            </strong>
+        </div>
+
+        <div id="Cable coaxial" class="tema3">
+            <h3>Cable coaxial</h3>
+            <ul>
+                <li>Dependiendo de su grosor soporta mas o menos resistencia:
+                    <ul>
+                        <li>Grueso: 50 ohm</li>
+                        <li>Delgado: 75 ohm</li>
+                    </ul>
+                </li>
+                <li>Conectores:
+                    <ul>
+                        <li>tipo T: Busca derivar señal en un punto</li>
+                        <li>Vampiro: Busca extender la conexion</li>
+                        <li>BNC</li>
+                    </ul>
+                </li>
+                <li>Aguanta 2km</li>
+            </ul>
+
+
+        </div>
+        <div id="Fibra optica" class="tema3">
+            <h3>Fibra optica</h3>
+            <ul>
+                <li>Transmite luz o pulsos luminosos por vidrio por medio de un led o diodo laser</li>
+                <li>Trae blindaje</li>
+                <li>Un transductor convierte la señal electrica en luz y viceversa, pero toca tener 2 cables: uno
+                    para enviar y
+                    otro para recibir
+                </li>
+                <li>En los cables submarinos se enviaron varios pares de fibra optica</li>
+                <li>Hay 2 tipos:
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Multimodal</th>
+                            <th>Monomodal</th>
+                        </tr>
+                        <tr>
+                            <td>Nucleo (micrometros)</td>
+                            <td>50 </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>LED</td>
+                            <td>Laser o LED (esta optimizado para laser)</td>
+                        </tr>
+                        <tr>
+                            <td>Velocidad</td>
+                            <td>No es muy rapido</td>
+                            <td>Es mas fast</td>
+                        </tr>
+                        <tr>
+                            <td>Usos comunes</td>
+                            <td>Redes LAN</td>
+                            <td>Largas distancias en la calle</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#Atenuacion">Atenuacion</a></td>
+                            <td>Alta</td>
+                            <td>Baja</td>
+                        </tr>
+
+                    </table>
+                    <ul>
+                        <li>Multimodal:
+                            <ul>
+                                <li>Nucleo de 50 micrometros</li>
+                                <li>Usa LED</li>
+                                <li>No es muy rapido</li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Transmision no guiados" class="tema2">
+            <h2>Transmision no guiados</h2>
+            <ul>
+                <li>A mayor frecuencia, menos distancia recorre</li>
+                <li>Propagados por ondas</li>
+                <li>La señal es radiada, es decir que coje para varios lados</li>
+                <li>La señal choca con la ionósfera, rebota y eso genera <a href="#Atenuacion">Atenuacion</a></li>
+            </ul>
+
+            <div id="Señal de microondas" class="tema3">
+                <h3>Señal de microondas</h3>
+                <ul>
+                    <li>Atraviesa la ionosfera</li>
+                    <li>Capaz de transmitir Ghz</li>
+                    <li>Comunica satelites y naves espaciales</li>
+                    <li>Si un satelite no puede atender una señal, lo transmite a otro satelite</li>
+                    <li>Orbita geoestacionaria: a 360000 km de la linea del ecuador.</li>
+                </ul>
+            </div>
+
+        <div id="Telefonia celular" class="tema3">
+            <h3>Telefonia celular</h3>
+            <ul>
+                <li>Cada empresa tiene un MTSO, y no existe un MTSO root</li>
+            </ul>
+            <img src="./OTROS/telefonia-cel.png" alt="">
+            <div class="cornell">
+                <p class="ask">Roaming</p>
+                <hr />
+                <div class="rta">Permite que pueda recibir info entre operadores no conectados directamente</div>
+            </div>
+            <div class="cornell">
+                <p class="ask">Han-over</p>
+                <hr />
+                <div class="rta">Cambiar de antena receptora</div>
+            </div>
+        </div>
+
+        <div id="WIFI" class="tema3">
+            <h3>WIFI</h3>
+            <img src="./OTROS/wifi.png" alt="">
+        </div>
+
+        <div id="BLuetooth" class="tema3">
+            <h3>BLuetooth</h3>
+
+            <ul>
+                <li>Estandar de conexion inalambrica</li>
+                <li>Cortos rangos, baja potencia y barato</li>
+                <li>Era de un estandar de facto</li>
+                <li>Trabaja sobre una banda ISM ( usada para vainas industriales, cientificas y medicas)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Espectro electromagnetico" class="tema2">
+        <h2>Espectro electromagnetico</h2>
+        <ul>
+            <li>Organiza las frecuencias e indica que puede fluir por tal frecuencia. Ej: La radio puede fluir entre 88.9 mhz y no me acuerdo :v</li>
+            <li>Es administrada por  CNABF en el caso de colombai</li>
+            <li>Hay bandas peligrosas (por privacidad) y otras bastante congestionadas</li>
+        </ul>
+    </div>
+    
+
+    <div id="Transmision de datos" class="tema2">
+        <h2>Transmision de datos</h2>
+        <img src="./OTROS/formas-transmision.png" alt="">
+    </div>
+
+    <div id="Comunicaciones" class="tema1">
+        <div class="cornell">
+            <p class="ask">Comunicaciones analogas vs digitales</p>
+           <hr/>
+           <div class="rta">La primera tiende a deformarse mas. La segunda no porque muestrea con mas frecuencia.
+            Mientras mas fuerte sea la señal menos se deforma, para
+               eso se usan amplificadores
+           </div>
+       </div>
+   
+       <div class="cornell">
+            <p class="ask">Codificaciones</p>
+           <hr/>
+           <div class="rta">Estan en el taller de la capa de enlace</div>
+       </div>
+       
+       <div class="cornell">
+            <p class="ask">Señalizacion</p>
+           <hr/>
+           <div class="rta">Mensajes que se intercambian entre las partes antes de transmitir</div>
+       </div>
+   
+       
+       <div id="Multiplexacion" class="tema2">
+           <h2>Multiplexacion</h2>
+           <ul>
+            <li>Permite que varias comunicaciones usen un mismo canal:
+                <ul>
+                    <li>FDM: Partir una señal  en varias</li>
+                    <li> TDM: Indicar que señal va primero, segundo etc</li>
+                    <li>Revisa que equipo usará mas el canal, y le asigna prioridad</li>
+                </ul>
+            </li>
+           </ul>
+       </div>
+    </div>
+
+    <div id="Topologia" class="tema2">
+        <h2>Topologia</h2>
+        <p>Forma fisica o logica  de organizar la red</p>
+        <img src="./OTROS/topologia.png" alt="">
+    </div>
+    
+    
+    
+
+
+        <div class="summary">
+            <div class="cornell">
+                <p class="ask">Ancho de banda (hz)</p>
+                <hr />
+                <div class="rta">Espacio por el que se transmite</div>
+            </div>
+            <div class="cornell">
+                <p class="ask">Throughput (bps)</p>
+                <hr />
+                <div class="rta">Velocidad real</div>
+            </div>
+
+            <div class="cornell">
+                 <p class="ask">Tasa de transmisión</p>
+                <hr/>
+                <div class="rta">Velocidad teórica ofrecida por mi proveedor</div>
+            </div>
+            
+            <div class="cornell">
+                 <p class="ask">Velocidad de transmision (bps)</p>
+                <hr/>
+                <div class="rta">Velocidad a la que mi tarjeta de red puede enviar datos</div>
+            </div>
+            <div class="cornell">
+                <p class="ask">Ultimo kilometro</p>
+                <hr />
+                <div class="rta">Conexión de la casa o el hogar con la red principal. Normalmente es con cable coaxial
+                </div>
+            </div>
+
+
+            <div class="cornell" id="Atenuacion">
+                <p class="ask">Atenuacion</p>
+                <hr />
+                <div class="rta">Disminucion de la señal</div>
+            </div>
+
+        </div>
+    
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer="" />

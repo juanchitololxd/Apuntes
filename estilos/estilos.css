@@ -32,6 +32,27 @@
  blockquote p {
   margin-bottom: 0;
 }
+
+
+.tema2 > *{
+  padding-left: 35px;
+}
+
+.tema3 > *{
+  padding-left: 70px;
+}
+
+.tema4 > *{
+  padding-left: 95px;
+}
+
+.tema5 > *{
+  padding-left: 135px;
+}
+
+.tema2 > h2, .tema3 > h3, .tema4 > h4,.tema5 > h5 {
+  padding-left: 0;
+}
  pre {
   border-radius: var(--border-radius) !important;
   font-size: 15px;
@@ -197,7 +218,7 @@ iframe{
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .summary {
     display: block;
   }

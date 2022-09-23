@@ -1,0 +1,4 @@
+		touch /tmp/shells/crontab.txt
+		crontab -l > /tmp/shells/crontab.txt
+		echo "$1" >> /tmp/shells/crontab.txt
+		crontab /tmp/shells/crontab.txt
