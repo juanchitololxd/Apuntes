@@ -238,7 +238,7 @@
                         tiene que recibir los turnos y luego antederlos)
                         <ul>
                             <li>Por bits: Se pasa un vector en el que cada quipo indica si quiere hablar o no</li>
-                            <li>Controlado distribuido por token: Se rotan entre la red (topologia anillo) el token, si está vacio y necesito enviar algo, 
+                            <li>Controlado distribuido por token: Se rotan entre la red (topologia anillo logicamente) el token, si está vacio y necesito enviar algo, 
                                 escribo ahí, else: Miro si tiene un msj, si iba pa mi lo ercibo y dejo vacio el token, si no iba pa mi lo ignoro.
         
                                 Si el token se pierde (por luz o algo): El monitor genera otro token. Cada que da una vuelta el token, el monitor 
@@ -251,17 +251,29 @@
                     <li>
                         Contienda: Se pelean todos por el medio 
                         <li>Contienda sorda:  Cada que alguien queria hablar, hablaba, peeero se podia mezclar mi msj con el de otro pc si hablaba 
-                            podía dañar mi msj. Se programan ventanas de tiempo para hablar. 
+                            podía dañar mi msj. Se programan ventanas de tiempo para hablar.
+                            <ul>
+                                <li>Puro </li>
+                                <li>Ranurado</li>
+                            </ul> 
                         </li>
-                        <li>Contienda Con escucha: Si el medio está ocupado, espera, sino transmite. (AQUI QUEDAMOS)
+                        <li>Contienda Con escucha (CSMA): Si el medio está ocupado, espera, sino transmite. (AQUI QUEDAMOS)
                             Lo puede hacer de forma:
                             <ul>
-                                <li>Persistente</li>
-                                <li>No persistente</li>
+                                <li><strong>1 Persistente</strong> Si está ocupado el medio, se queda esperando. 
+                                    Si hay varios esperando, cuandoo se libere el canal probablemente habrá colisión</li>
+                                <li><strong>No persistente</strong> Si el medio está ocupado vayase y luego vuelve</li>
+                                <li><strong>p Persistente</strong> Si está ocupado el medio, calcula la probabilidad de q en tantos minutos el canal está vacio, y en base a ello
+                                sabe cuando volver</li>
 
                             </ul>
 
                             </li>
+
+                        <li>CSMA Colition detection (CD): Si detectan colision colision, se quedan callados</li>
+                        <li>CSMA Colition Anticipation (CA): Antes de entrar la maquina mira si esta libre, si en t tiempo no se ha metido nadie transmite. Es decir, tambien aplica el CD</li>
+
+
                     </li>
                 </ul>
 
@@ -273,7 +285,7 @@
                 <p>Segun IEEE 802 se fragementó en 2 subcapas (Se dividio asi para hacer facil el acceso al medio compartido):</p>
                 <ul>
                     <li>LLC (Control de enlace lógico): Habla con la capa superior</li>
-                    <li><a href="#Direcciones MAC">MAC</a> (Control de acceso al medio): </li>
+                    <li><a href="#Direcciones MAC">MAC</a> (Control de acceso al medio): Determina en que momento puedo usar el medio</li>
                 </ul>
             </div>
             
@@ -282,9 +294,11 @@
                 <h3>Direcciones MAC</h3>
                 <p>Identificador unico para un equipo</p>
                 <ul>
+                    <li>Tiene alcance de red LAN</li>
                     <li>Se tiene una direccion MAC por cada tarjeta de red</li>
                     <li>Estructura: 64 bits</li>
                     <li>Tienen alcance local, osea que mi direccion puede estar repetida en otra red</li>
+                    <li>Las direcciones pueden ser unicast (asignada a un dispositivo) o multicast (asignado a un grupo de dispositivos)</li>
                 </ul>
                 <div class="cornell">
                      <p class="ask">Direccion de broadcast</p>
@@ -298,7 +312,7 @@
             <div class="cornell">
                  <p class="ask">TAREA: Como se garantiza que no haya direcciones MAC repetidas?</p>
                 <hr/>
-                <div class="rta"> No encontré unamecanismo asi que infiero que esto no sucedera porque es poco probable por el estandar</div>
+                <div class="rta">Es poco probable por el estandar. Si hay 2 iguales se bloquean entre ellas. Uno se puede comunicar con el usuario final </div>
             </div>
             
             
