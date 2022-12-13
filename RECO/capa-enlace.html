@@ -257,7 +257,7 @@
                                 <li>Ranurado</li>
                             </ul> 
                         </li>
-                        <li>Contienda Con escucha (CSMA): Si el medio está ocupado, espera, sino transmite. (AQUI QUEDAMOS)
+                        <li>Contienda Con escucha (CSMA): Si el medio está ocupado, espera, sino transmite.
                             Lo puede hacer de forma:
                             <ul>
                                 <li><strong>1 Persistente</strong> Si está ocupado el medio, se queda esperando. 
@@ -270,9 +270,26 @@
 
                             </li>
 
-                        <li>CSMA Colition detection (CD): Si detectan colision colision, se quedan callados</li>
+                        <li>CSMA Colition detection (CD): Si detectan colision colision, se quedan callados
+                            <ul>
+                                <li>No hay estación arbitro</li>
+                                <li>Dominio de colisión: Grupo de estaciones con el que compito por el medio</li>
+                                <li>Todas las estaciones escuchan y miran si van para ellos</li>
+                                <li>3 tipos:
+                                    <ul>
+                                        <li>Round Tripe time</li>
+                                        <li>IFG (Interframe Gap): Espacio que hay entre el envio de frames</li>
+                                        <li>Backoff time: Tiempo que tiene que psar antes de volver a transmitir</li>
+                                        <li>Señal JAM: Señal que indica que hubo colision</li>
+                                        
+                                    </ul>
+                                </li>
+                                <strong>Buscar el Diagrama de flujo de ethernet de la profe</strong>
+                            </ul>
+                        </li>
                         <li>CSMA Colition Anticipation (CA): Antes de entrar la maquina mira si esta libre, si en t tiempo no se ha metido nadie transmite. Es decir, tambien aplica el CD</li>
 
+                        
 
                     </li>
                 </ul>
@@ -297,6 +314,7 @@
                     <li>Tiene alcance de red LAN</li>
                     <li>Se tiene una direccion MAC por cada tarjeta de red</li>
                     <li>Estructura: 64 bits</li>
+                    <li>6 bytes de tamaño</li>
                     <li>Tienen alcance local, osea que mi direccion puede estar repetida en otra red</li>
                     <li>Las direcciones pueden ser unicast (asignada a un dispositivo) o multicast (asignado a un grupo de dispositivos)</li>
                 </ul>
@@ -307,6 +325,21 @@
                         todos los de una red
                     </div>
                 </div>
+Empaquetado: {preambulo} {Delimitador partida (01111110)} {Direccion destino MAC} {Direccion Origen MAC} {Dir IP destino} {Dir IP origen} {Longitud} {datos LLC} 
+{PAD} {secuencia verificacion }
+
+                tamaño mminimo de frame  64 bytes, con el fin de que todos alcancen a escuchar
+                <br></br>
+                La direccion destino va primero para que las mquinas detecten rapido si la info iba para ellos
+                <ul>
+                    <li>PAD: Relleno que va sii el frame es menor a 64 bytes</li>
+                    <li>el tamaño maximo de frame es 1522 bytes</li>
+                    <li>Secuencia verificacion (CRC-32 por ej)</li>
+                    <li>Longitud: 0x800 en ipv4 y 0x.806 para ipv6</li>
+                </ul>
+                
+                
+                
             </div>
 
             <div class="cornell">
