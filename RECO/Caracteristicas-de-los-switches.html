@@ -1,0 +1,301 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="./../estilos/oscuro.css" id="style" rel="stylesheet"/>
+  <script src="./../main.js">
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+  </script>
+  <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+ </head>
+ <body>
+  <div class="setter">
+   <button onclick="setStyles()">
+    Cambiar
+   </button>
+  </div>
+  <h1>
+   Caracteristicas de los switches
+  </h1>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    - Autonegicacion
+   </p>
+   <hr/>
+   <div class="rta">
+    Negociar la velocidad de envío
+   </div>
+  </div>
+  <div class="cornell">
+   <p class="ask">
+    - Manejo de filtros
+   </p>
+   <hr/>
+   <div class="rta">
+    Poner restricciones por ejemplo sobre que tipo de equipos se pueden conectar  a determinado puerto
+   </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>
+   - No existe en las inalambricas
+  </p>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    - Transmision boroadcast
+   </p>
+   <hr/>
+   <div class="rta">
+    como funciona una topología BUS
+   </div>
+  </div>
+  <div class="cornell">
+   <p class="ask">
+    - Trafico broadcast
+   </p>
+   <hr/>
+   <div class="rta">
+    Conjunto de frames enviados a la broadcast address
+   </div>
+  </div>
+  <div class="cornell">
+   <p class="ask">
+    - Dominio Broadcast
+   </p>
+   <hr/>
+   <div class="rta">
+    A quien le llega un mensaje dirigido a una red
+   </div>
+  </div>
+  <div class="cornell">
+   <p class="ask">
+    - Dominio de colision
+   </p>
+   <hr/>
+   <div class="rta">
+    Conjunto de estaciones que pelean por el medio en ciertos momentos
+   </div>
+  </div>
+  <br/>
+  <br/>
+  <p>
+   - Los equipos de capa 1 y 2 NO calculan el CRC
+  </p>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>
+   Se pueden agrupar los grupos o usuarios con un sol ow¿switch o switches conectados
+  </p>
+  <br/>
+  <br/>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    Agrega un tag
+   </p>
+   <hr/>
+   <div class="rta">
+    Lo pone el switch, porque el es el que gestiona el acceso al medio, y lo quita el otro switch
+   </div>
+  </div>
+  <p>
+   //Dir Dst Mac  |  Src MAC |  Type (0x8100) (2bytes) | Prioridad (3 bits) | CFI (1 bit) | VID (12 Bits) |  Length data | FCS
+  </p>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    2 modos
+   </p>
+   <hr/>
+   <div class="rta">
+    Infraestructura o AD/HOC (El que se usa es infraestructura)
+   </div>
+  </div>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    Access point
+   </p>
+   <hr/>
+   <div class="rta">
+    está en la mitad de la capa fisica y la de enlace. Solo retransmite señales
+   </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>
+   Tiene DHCP por facilidad (no recuerdo el por que xd, se gun ella para qeu no tengamos que montar servidores DHCP en micasas)
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <div class="cornell">
+   <p class="ask">
+    Router capa 3
+   </p>
+   <hr/>
+   <div class="rta">
+    Tiene un Hub
+   </div>
+  </div>
+  <p>
+   Los hubs no cambian de red. Asi que todos los que se interconectan a el cuentan como un solo dominio de colision
+  </p>
+  <div class="cornell">
+   <p class="ask">
+    repetidores
+   </p>
+   <hr/>
+   <div class="rta">
+    son access points, dependiendo donde esté peude hacer parte de las redes alambricas o inalambricas. No afectan a los dominios de colision
+   </div>
+  </div>
+  <p>
+  </p>
+  <p>
+   Protocolo MAC 802.11
+  </p>
+  <br/>
+  <p>
+   yo quiero entrar al medio en una red wifi (que usa CSMA/CA), No puedo saber s iel router está hablando con otro
+  </p>
+  <div class="cornell">
+   <p class="ask">
+    SSID
+   </p>
+   <hr/>
+   <div class="rta">
+    Id en letras de la red
+   </div>
+  </div>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    Beacon frame
+   </p>
+   <hr/>
+   <div class="rta">
+    Mensaje que envía la estación base que indica que tales redes son existentes
+   </div>
+  </div>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    RTC
+   </p>
+   <hr/>
+   <div class="rta">
+    Request to send
+   </div>
+  </div>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    CTC
+   </p>
+   <hr/>
+   <div class="rta">
+    "Clear to send"
+   </div>
+  </div>
+  <p>
+  </p>
+  <br/>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    Pasivo
+   </p>
+   <hr/>
+   <div class="rta">
+    el cliente no hace nada
+   </div>
+  </div>
+  <div class="cornell">
+   <p class="ask">
+    Activo
+   </p>
+   <hr/>
+   <div class="rta">
+    El pc le da la información a la estación base (router o AP)
+   </div>
+  </div>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    Authentication
+   </p>
+   <hr/>
+   <div class="rta">
+    Es el login basicamente
+   </div>
+  </div>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    Association
+   </p>
+   <hr/>
+   <div class="rta">
+    El equipo le da la MAC al router o access point
+   </div>
+  </div>
+  <p>
+  </p>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <div class="cornell">
+   <p class="ask">
+    Varias piconets
+   </p>
+   <hr/>
+   <div class="rta">
+    Un maestro con sus negros o esclavos, no hay diff
+   </div>
+  </div>
+  <p>
+   Usa distribucion maestro esclavo, maximo doscientos cincuenta y algo esclavos
+  </p>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>
+   Usa distribucion maestro esclavo, MAXIMO 65536 nodos
+  </p>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>
+   Bandas no licenciadas, o hay que pagarla si se licencia
+  </p>
+  <p>
+  </p>
+ </body>
+</html>
