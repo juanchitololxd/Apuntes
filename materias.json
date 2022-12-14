@@ -1,1 +1,1430 @@
-{"materias": [{"nombre": "PRAV", "ciclo": "", "lastUpdate": "25/07/2022", "temas": [{"nombre": "id1", "repasos": 0, "id": "id1", "file": "preguntas.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "id2", "repasos": 0, "id": "id2", "file": "preguntas.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Seducci\u00f3n Textual", "repasos": 0, "id": "Seducci\u00f3n Textual", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Despertar emociones", "repasos": 0, "id": "Despertar emociones", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Sobresalir con mis palabras", "repasos": 0, "id": "Sobresalir con mis palabras", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Crear Conexiones", "repasos": 0, "id": "Crear Conexiones", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Hacer bromas internas espec\u00edficas", "repasos": 0, "id": "Hacer bromas internas espec\u00edficas", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Hacer preguntas espec\u00edficas internas", "repasos": 0, "id": "Hacer preguntas espec\u00edficas internas", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Manejar la log\u00edstica", "repasos": 0, "id": "Manejar la log\u00edstica", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "El primer mensaje", "repasos": 0, "id": "El primer mensaje", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Cumplidos", "repasos": 0, "id": "Cumplidos", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Historia", "repasos": 0, "id": "Historia", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Errores al seducir por mensajes", "repasos": 0, "id": "Errores al seducir por mensajes", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "Recomendaciones", "repasos": 0, "id": "Recomendaciones", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "id1", "repasos": 0, "id": "id1", "file": "preguntas.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}, {"nombre": "id1", "repasos": 0, "id": "id1", "file": "wapp-seductor.html", "ultimoRepaso": {"fecha": "21/06/2022", "dias": "0"}}]}, {"nombre": "CVDS", "ciclo": "2022-2", "lastUpdate": "25/07/2022", "temas": [{"nombre": "id1", "repasos": 0, "id": "id1", "file": "example.html", "ultimoRepaso": {"fecha": "04/08/2022", "dias": "0"}}]}, {"nombre": "RECO", "ciclo": "2022-2", "lastUpdate": "25/07/2022", "temas": [{"nombre": "Componentes", "repasos": 0, "id": "Componentes", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id2", "repasos": 0, "id": "id2", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Historia", "repasos": 0, "id": "Historia", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Redes punto a punto", "repasos": 0, "id": "Redes punto a punto", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Fast ethernet Twisted pair", "repasos": 0, "id": "Fast ethernet Twisted pair", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Fast ethernet fiber optic ", "repasos": 0, "id": "Fast ethernet fiber optic ", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Giga ethernet", "repasos": 0, "id": "Giga ethernet", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Wifi", "repasos": 0, "id": "Wifi", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id9", "repasos": 0, "id": "id9", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id10", "repasos": 0, "id": "id10", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id11", "repasos": 0, "id": "id11", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "\thubs", "repasos": 0, "id": "\thubs", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "\tBridge", "repasos": 0, "id": "\tBridge", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "\tSwitch (capa 2)", "repasos": 0, "id": "\tSwitch (capa 2)", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "\t\tSpaning TREE", "repasos": 0, "id": "\t\tSpaning TREE", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "\t\tInterconexion de switches:", "repasos": 0, "id": "\t\tInterconexion de switches:", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id17", "repasos": 0, "id": "id17", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id18", "repasos": 0, "id": "id18", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id19", "repasos": 0, "id": "id19", "file": "Ethernet.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id1", "repasos": 0, "id": "id1", "file": "A.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Capa de aplicaci\u00f3n", "repasos": 0, "id": "Capa de aplicaci\u00f3n", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Cliente/Servidor", "repasos": 0, "id": "Cliente/Servidor", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "P2P", "repasos": 0, "id": "P2P", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id4", "repasos": 0, "id": "id4", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id5", "repasos": 0, "id": "id5", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Puerto", "repasos": 0, "id": "Puerto", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Protocolos", "repasos": 0, "id": "Protocolos", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "DHCP", "repasos": 0, "id": "DHCP", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Est\u00e1tica", "repasos": 0, "id": "Est\u00e1tica", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Din\u00e1mica", "repasos": 0, "id": "Din\u00e1mica", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "DNS", "repasos": 0, "id": "DNS", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Archivos", "repasos": 0, "id": "Archivos", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Linux", "repasos": 0, "id": "Linux", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Windows", "repasos": 0, "id": "Windows", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Estructura", "repasos": 0, "id": "Estructura", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id16", "repasos": 0, "id": "id16", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Codigos de respuestas", "repasos": 0, "id": "Codigos de respuestas", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "DNS Tipos", "repasos": 0, "id": "DNS Tipos", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Archivo DNS", "repasos": 0, "id": "Archivo DNS", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id21", "repasos": 0, "id": "id21", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id22", "repasos": 0, "id": "id22", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id23", "repasos": 0, "id": "id23", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id24", "repasos": 0, "id": "id24", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Http", "repasos": 0, "id": "Http", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "conexion persistente", "repasos": 0, "id": "conexion persistente", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Conexi\u00f3n no persistente", "repasos": 0, "id": "Conexi\u00f3n no persistente", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Correos", "repasos": 0, "id": "Correos", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id29", "repasos": 0, "id": "id29", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id30", "repasos": 0, "id": "id30", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id31", "repasos": 0, "id": "id31", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id32", "repasos": 0, "id": "id32", "file": "capa-aplicacion.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id3", "repasos": 0, "id": "id3", "file": "Capa-de-red.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id6", "repasos": 0, "id": "id6", "file": "Capa-de-red.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id7", "repasos": 0, "id": "id7", "file": "Capa-de-red.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id8", "repasos": 0, "id": "id8", "file": "Capa-de-red.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id12", "repasos": 0, "id": "id12", "file": "Capa-de-red.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Capa Enlace", "repasos": 0, "id": "Capa Enlace", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Framing", "repasos": 0, "id": "Framing", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Formas", "repasos": 0, "id": "Formas", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Control de errores", "repasos": 0, "id": "Control de errores", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Control de flujo", "repasos": 0, "id": "Control de flujo", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Mecanismos para control de buffer", "repasos": 0, "id": "Mecanismos para control de buffer", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Canal perfecto", "repasos": 0, "id": "Canal perfecto", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Canal ruidoso", "repasos": 0, "id": "Canal ruidoso", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Sliding window", "repasos": 0, "id": "Sliding window", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "2 Formas", "repasos": 0, "id": "2 Formas", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Go back in", "repasos": 0, "id": "Go back in", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Selectitive repition", "repasos": 0, "id": "Selectitive repition", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id13", "repasos": 0, "id": "id13", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id14", "repasos": 0, "id": "id14", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Buffers", "repasos": 0, "id": "Buffers", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Tipo de comunicaci\u00f3n", "repasos": 0, "id": "Tipo de comunicaci\u00f3n", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Acceso al medio", "repasos": 0, "id": "Acceso al medio", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Subcapas de la capa de enlace", "repasos": 0, "id": "Subcapas de la capa de enlace", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Direcciones MAC", "repasos": 0, "id": "Direcciones MAC", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id20", "repasos": 0, "id": "id20", "file": "capa-enlace.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Capa fisica", "repasos": 0, "id": "Capa fisica", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Cableado estructurado", "repasos": 0, "id": "Cableado estructurado", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Transmisiones guiadas", "repasos": 0, "id": "Transmisiones guiadas", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Cobre", "repasos": 0, "id": "Cobre", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Cable coaxial", "repasos": 0, "id": "Cable coaxial", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Fibra optica", "repasos": 0, "id": "Fibra optica", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Transmision no guiados", "repasos": 0, "id": "Transmision no guiados", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Se\u00f1al de microondas", "repasos": 0, "id": "Se\u00f1al de microondas", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Telefonia celular", "repasos": 0, "id": "Telefonia celular", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "WIFI", "repasos": 0, "id": "WIFI", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "BLuetooth", "repasos": 0, "id": "BLuetooth", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Espectro electromagnetico", "repasos": 0, "id": "Espectro electromagnetico", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Transmision de datos", "repasos": 0, "id": "Transmision de datos", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Comunicaciones", "repasos": 0, "id": "Comunicaciones", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Multiplexacion", "repasos": 0, "id": "Multiplexacion", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Topologia", "repasos": 0, "id": "Topologia", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id25", "repasos": 0, "id": "id25", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id26", "repasos": 0, "id": "id26", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Atenuacion", "repasos": 0, "id": "Atenuacion", "file": "capa-fisica.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Capas", "repasos": 0, "id": "Capas", "file": "capas.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "OSI y TCP/IP", "repasos": 0, "id": "OSI y TCP/IP", "file": "capas.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "tipo de servicio", "repasos": 0, "id": "tipo de servicio", "file": "capas.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "PDU", "repasos": 0, "id": "PDU", "file": "capas.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "buffer", "repasos": 0, "id": "buffer", "file": "capas.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "Subred", "repasos": 0, "id": "Subred", "file": "capas.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id1", "repasos": 0, "id": "id1", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id2", "repasos": 0, "id": "id2", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id3", "repasos": 0, "id": "id3", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id4", "repasos": 0, "id": "id4", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id5", "repasos": 0, "id": "id5", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id6", "repasos": 0, "id": "id6", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id7", "repasos": 0, "id": "id7", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id8", "repasos": 0, "id": "id8", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id9", "repasos": 0, "id": "id9", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id10", "repasos": 0, "id": "id10", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id11", "repasos": 0, "id": "id11", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id12", "repasos": 0, "id": "id12", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id13", "repasos": 0, "id": "id13", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id14", "repasos": 0, "id": "id14", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id15", "repasos": 0, "id": "id15", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id16", "repasos": 0, "id": "id16", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id17", "repasos": 0, "id": "id17", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id18", "repasos": 0, "id": "id18", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id19", "repasos": 0, "id": "id19", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}, {"nombre": "id20", "repasos": 0, "id": "id20", "file": "Caracteristicas-de-los-switches.html", "ultimoRepaso": {"fecha": "13/12/2022", "dias": "0"}}]}, {"nombre": "CNYT", "ciclo": "2022-2", "lastUpdate": "25/07/2022", "temas": []}, {"nombre": "EGI3", "ciclo": "2022-2", "lastUpdate": "25/07/2022", "temas": []}, {"nombre": "ECDI", "ciclo": "2022-2", "lastUpdate": "25/07/2022", "temas": []}, {"nombre": "FINANZAS", "ciclo": "", "lastUpdate": "25/07/2022", "temas": []}], "lastUpdate": "13/12/2022"}
+{
+	"materias": [
+		{
+			"nombre": "PRAV",
+			"ciclo": "",
+			"lastUpdate": "25/07/2022",
+			"temas": [
+				{
+					"nombre": "id1",
+					"repasos": 0,
+					"id": "id1",
+					"file": "preguntas.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id2",
+					"repasos": 0,
+					"id": "id2",
+					"file": "preguntas.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Seducción Textual",
+					"repasos": 0,
+					"id": "Seducción Textual",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Despertar emociones",
+					"repasos": 0,
+					"id": "Despertar emociones",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Sobresalir con mis palabras",
+					"repasos": 0,
+					"id": "Sobresalir con mis palabras",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Crear Conexiones",
+					"repasos": 0,
+					"id": "Crear Conexiones",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Hacer bromas internas específicas",
+					"repasos": 0,
+					"id": "Hacer bromas internas específicas",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Hacer preguntas específicas internas",
+					"repasos": 0,
+					"id": "Hacer preguntas específicas internas",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Manejar la logística",
+					"repasos": 0,
+					"id": "Manejar la logística",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "El primer mensaje",
+					"repasos": 0,
+					"id": "El primer mensaje",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Cumplidos",
+					"repasos": 0,
+					"id": "Cumplidos",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Historia",
+					"repasos": 0,
+					"id": "Historia",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Errores al seducir por mensajes",
+					"repasos": 0,
+					"id": "Errores al seducir por mensajes",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Recomendaciones",
+					"repasos": 0,
+					"id": "Recomendaciones",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id1",
+					"repasos": 0,
+					"id": "id1",
+					"file": "preguntas.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id1",
+					"repasos": 0,
+					"id": "id1",
+					"file": "wapp-seductor.html",
+					"ultimoRepaso": {
+						"fecha": "21/06/2022",
+						"dias": "0"
+					}
+				}
+			]
+		},
+		{
+			"nombre": "CVDS",
+			"ciclo": "2022-2",
+			"lastUpdate": "25/07/2022",
+			"temas": [
+				{
+					"nombre": "id1",
+					"repasos": 0,
+					"id": "id1",
+					"file": "example.html",
+					"ultimoRepaso": {
+						"fecha": "04/08/2022",
+						"dias": "0"
+					}
+				}
+			]
+		},
+		{
+			"nombre": "RECO",
+			"ciclo": "2022-2",
+			"lastUpdate": "25/07/2022",
+			"temas": [
+				{
+					"nombre": "Componentes",
+					"repasos": 0,
+					"id": "Componentes",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id2",
+					"repasos": 0,
+					"id": "id2",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Historia",
+					"repasos": 0,
+					"id": "Historia",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Redes punto a punto",
+					"repasos": 0,
+					"id": "Redes punto a punto",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Fast ethernet Twisted pair",
+					"repasos": 0,
+					"id": "Fast ethernet Twisted pair",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Fast ethernet fiber optic ",
+					"repasos": 0,
+					"id": "Fast ethernet fiber optic ",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Giga ethernet",
+					"repasos": 0,
+					"id": "Giga ethernet",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Wifi",
+					"repasos": 0,
+					"id": "Wifi",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id9",
+					"repasos": 0,
+					"id": "id9",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id10",
+					"repasos": 0,
+					"id": "id10",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id11",
+					"repasos": 0,
+					"id": "id11",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "\thubs",
+					"repasos": 0,
+					"id": "\thubs",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "\tBridge",
+					"repasos": 0,
+					"id": "\tBridge",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "\tSwitch (capa 2)",
+					"repasos": 0,
+					"id": "\tSwitch (capa 2)",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "\t\tSpaning TREE",
+					"repasos": 0,
+					"id": "\t\tSpaning TREE",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "\t\tInterconexion de switches:",
+					"repasos": 0,
+					"id": "\t\tInterconexion de switches:",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id17",
+					"repasos": 0,
+					"id": "id17",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id18",
+					"repasos": 0,
+					"id": "id18",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id19",
+					"repasos": 0,
+					"id": "id19",
+					"file": "Ethernet.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id1",
+					"repasos": 0,
+					"id": "id1",
+					"file": "A.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Capa de aplicación",
+					"repasos": 0,
+					"id": "Capa de aplicación",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Cliente/Servidor",
+					"repasos": 0,
+					"id": "Cliente/Servidor",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "P2P",
+					"repasos": 0,
+					"id": "P2P",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id4",
+					"repasos": 0,
+					"id": "id4",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id5",
+					"repasos": 0,
+					"id": "id5",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Puerto",
+					"repasos": 0,
+					"id": "Puerto",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Protocolos",
+					"repasos": 0,
+					"id": "Protocolos",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "DHCP",
+					"repasos": 0,
+					"id": "DHCP",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Estática",
+					"repasos": 0,
+					"id": "Estática",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Dinámica",
+					"repasos": 0,
+					"id": "Dinámica",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "DNS",
+					"repasos": 0,
+					"id": "DNS",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Archivos",
+					"repasos": 0,
+					"id": "Archivos",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Linux",
+					"repasos": 0,
+					"id": "Linux",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Windows",
+					"repasos": 0,
+					"id": "Windows",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Estructura",
+					"repasos": 0,
+					"id": "Estructura",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id16",
+					"repasos": 0,
+					"id": "id16",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Codigos de respuestas",
+					"repasos": 0,
+					"id": "Codigos de respuestas",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "DNS Tipos",
+					"repasos": 0,
+					"id": "DNS Tipos",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Archivo DNS",
+					"repasos": 0,
+					"id": "Archivo DNS",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id21",
+					"repasos": 0,
+					"id": "id21",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id22",
+					"repasos": 0,
+					"id": "id22",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id23",
+					"repasos": 0,
+					"id": "id23",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id24",
+					"repasos": 0,
+					"id": "id24",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Http",
+					"repasos": 0,
+					"id": "Http",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "conexion persistente",
+					"repasos": 0,
+					"id": "conexion persistente",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Conexión no persistente",
+					"repasos": 0,
+					"id": "Conexión no persistente",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Correos",
+					"repasos": 0,
+					"id": "Correos",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id29",
+					"repasos": 0,
+					"id": "id29",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id30",
+					"repasos": 0,
+					"id": "id30",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id31",
+					"repasos": 0,
+					"id": "id31",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id32",
+					"repasos": 0,
+					"id": "id32",
+					"file": "capa-aplicacion.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id3",
+					"repasos": 0,
+					"id": "id3",
+					"file": "Capa-de-red.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id6",
+					"repasos": 0,
+					"id": "id6",
+					"file": "Capa-de-red.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id7",
+					"repasos": 0,
+					"id": "id7",
+					"file": "Capa-de-red.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id8",
+					"repasos": 0,
+					"id": "id8",
+					"file": "Capa-de-red.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id12",
+					"repasos": 0,
+					"id": "id12",
+					"file": "Capa-de-red.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Capa Enlace",
+					"repasos": 0,
+					"id": "Capa Enlace",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Framing",
+					"repasos": 0,
+					"id": "Framing",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Formas",
+					"repasos": 0,
+					"id": "Formas",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Control de errores",
+					"repasos": 0,
+					"id": "Control de errores",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Control de flujo",
+					"repasos": 0,
+					"id": "Control de flujo",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Mecanismos para control de buffer",
+					"repasos": 0,
+					"id": "Mecanismos para control de buffer",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Canal perfecto",
+					"repasos": 0,
+					"id": "Canal perfecto",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Canal ruidoso",
+					"repasos": 0,
+					"id": "Canal ruidoso",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Sliding window",
+					"repasos": 0,
+					"id": "Sliding window",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "2 Formas",
+					"repasos": 0,
+					"id": "2 Formas",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Go back in",
+					"repasos": 0,
+					"id": "Go back in",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Selectitive repition",
+					"repasos": 0,
+					"id": "Selectitive repition",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id13",
+					"repasos": 0,
+					"id": "id13",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id14",
+					"repasos": 0,
+					"id": "id14",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Buffers",
+					"repasos": 0,
+					"id": "Buffers",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Tipo de comunicación",
+					"repasos": 0,
+					"id": "Tipo de comunicación",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Acceso al medio",
+					"repasos": 0,
+					"id": "Acceso al medio",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Subcapas de la capa de enlace",
+					"repasos": 0,
+					"id": "Subcapas de la capa de enlace",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Direcciones MAC",
+					"repasos": 0,
+					"id": "Direcciones MAC",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id20",
+					"repasos": 0,
+					"id": "id20",
+					"file": "capa-enlace.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Capa fisica",
+					"repasos": 0,
+					"id": "Capa fisica",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Cableado estructurado",
+					"repasos": 0,
+					"id": "Cableado estructurado",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Transmisiones guiadas",
+					"repasos": 0,
+					"id": "Transmisiones guiadas",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Cobre",
+					"repasos": 0,
+					"id": "Cobre",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Cable coaxial",
+					"repasos": 0,
+					"id": "Cable coaxial",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Fibra optica",
+					"repasos": 0,
+					"id": "Fibra optica",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Transmision no guiados",
+					"repasos": 0,
+					"id": "Transmision no guiados",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Señal de microondas",
+					"repasos": 0,
+					"id": "Señal de microondas",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Telefonia celular",
+					"repasos": 0,
+					"id": "Telefonia celular",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "WIFI",
+					"repasos": 0,
+					"id": "WIFI",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "BLuetooth",
+					"repasos": 0,
+					"id": "BLuetooth",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Espectro electromagnetico",
+					"repasos": 0,
+					"id": "Espectro electromagnetico",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Transmision de datos",
+					"repasos": 0,
+					"id": "Transmision de datos",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Comunicaciones",
+					"repasos": 0,
+					"id": "Comunicaciones",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Multiplexacion",
+					"repasos": 0,
+					"id": "Multiplexacion",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Topologia",
+					"repasos": 0,
+					"id": "Topologia",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id25",
+					"repasos": 0,
+					"id": "id25",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id26",
+					"repasos": 0,
+					"id": "id26",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Atenuacion",
+					"repasos": 0,
+					"id": "Atenuacion",
+					"file": "capa-fisica.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Capas",
+					"repasos": 0,
+					"id": "Capas",
+					"file": "capas.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "OSI y TCP/IP",
+					"repasos": 0,
+					"id": "OSI y TCP/IP",
+					"file": "capas.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "tipo de servicio",
+					"repasos": 0,
+					"id": "tipo de servicio",
+					"file": "capas.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "PDU",
+					"repasos": 0,
+					"id": "PDU",
+					"file": "capas.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "buffer",
+					"repasos": 0,
+					"id": "buffer",
+					"file": "capas.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "Subred",
+					"repasos": 0,
+					"id": "Subred",
+					"file": "capas.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id1",
+					"repasos": 0,
+					"id": "id1",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id2",
+					"repasos": 0,
+					"id": "id2",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id3",
+					"repasos": 0,
+					"id": "id3",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id4",
+					"repasos": 0,
+					"id": "id4",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id5",
+					"repasos": 0,
+					"id": "id5",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id6",
+					"repasos": 0,
+					"id": "id6",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id7",
+					"repasos": 0,
+					"id": "id7",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id8",
+					"repasos": 0,
+					"id": "id8",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id9",
+					"repasos": 0,
+					"id": "id9",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id10",
+					"repasos": 0,
+					"id": "id10",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id11",
+					"repasos": 0,
+					"id": "id11",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id12",
+					"repasos": 0,
+					"id": "id12",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id13",
+					"repasos": 0,
+					"id": "id13",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id14",
+					"repasos": 0,
+					"id": "id14",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id15",
+					"repasos": 0,
+					"id": "id15",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id16",
+					"repasos": 0,
+					"id": "id16",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id17",
+					"repasos": 0,
+					"id": "id17",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id18",
+					"repasos": 0,
+					"id": "id18",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id19",
+					"repasos": 0,
+					"id": "id19",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				},
+				{
+					"nombre": "id20",
+					"repasos": 0,
+					"id": "id20",
+					"file": "Caracteristicas-de-los-switches.html",
+					"ultimoRepaso": {
+						"fecha": "13/12/2022",
+						"dias": "0"
+					}
+				}
+			]
+		},
+		{
+			"nombre": "CNYT",
+			"ciclo": "2022-2",
+			"lastUpdate": "25/07/2022",
+			"temas": []
+		},
+		{
+			"nombre": "EGI3",
+			"ciclo": "2022-2",
+			"lastUpdate": "25/07/2022",
+			"temas": []
+		},
+		{
+			"nombre": "ECDI",
+			"ciclo": "2022-2",
+			"lastUpdate": "25/07/2022",
+			"temas": []
+		},
+		{
+			"nombre": "FINANZAS",
+			"ciclo": "",
+			"lastUpdate": "25/07/2022",
+			"temas": []
+		}
+	],
+	"lastUpdate": "13/12/2022"
+}
