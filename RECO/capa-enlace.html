@@ -1,360 +1,571 @@
 <html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
-<script src="./../main.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    </head>
-    <body>
-        <div class="setter">
-            <button onclick="setStyles()">Cambiar</button>
-        </div>
-        <div id="Capa Enlace" class="tema1">
-            <h1>Capa Enlace</h1>
-            <ul>
-                <li>Lograr una comunicación estable y eficiente entre maquinas <strong>adyacentes</strong> (se preocupa por la conexión punto a punto)</li>
-                <li>Colabora a nivel logico con el tipo de comunicación (simplex, duplex...)</li>
-                <li>La tarjeta de red es quien hace todo esto (puede ser firmware o hardware)</li>
-            </ul>
-            <div id="Framing" class="tema2">
-                <h2>Framing</h2>
-                <ul>
-                    <li>Determinar la forma  en que los paquetes se encapsulan en frames</li>
-                    
-                </ul>
-                <div id="Formas" class="tema3">
-                    <h3>Formas:</h3>
-                    <ul>
-                        <li>Pone datos de control al inicio y al final de los datos de la capa superior</li>
-                        <li>Character (conteo de caracteres): Pone al inicio del frame cuantos bytes forman ese frame. 
+ <head>
+  <meta charset="utf-8"/>
+  <link href="./../estilos/oscuro.css" id="style" rel="stylesheet"/>
+  <script src="./../main.js">
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+  </script>
+  <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+ </head>
+ <body>
+  <div class="setter">
+   <button onclick="setStyles()">
+    Cambiar
+   </button>
+  </div>
+  <div class="tema1" id="Capa Enlace">
+   <h1>
+    Capa Enlace
+   </h1>
+   <ul>
+    <li>
+     Lograr una comunicación estable y eficiente entre maquinas
+     <strong>
+      adyacentes
+     </strong>
+     (se preocupa por la conexión punto a punto)
+    </li>
+    <li>
+     Colabora a nivel logico con el tipo de comunicación (simplex, duplex...)
+    </li>
+    <li>
+     La tarjeta de red es quien hace todo esto (puede ser firmware o hardware)
+    </li>
+   </ul>
+   <div class="tema2" id="Framing">
+    <h2>
+     Framing
+    </h2>
+    <ul>
+     <li>
+      Determinar la forma  en que los paquetes se encapsulan en frames
+     </li>
+    </ul>
+    <div class="tema3" id="Formas">
+     <h3>
+      Formas:
+     </h3>
+     <ul>
+      <li>
+       Pone datos de control al inicio y al final de los datos de la capa superior
+      </li>
+      <li>
+       Character (conteo de caracteres): Pone al inicio del frame cuantos bytes forman ese frame. 
                             Esa longitud incluye ese bit. El problema es que si se daña ese bit cancele
-                        </li>
-                        <li>Physical layer: Se envian codigos que no sean reconocidos por la capa de enlace (&, %, ..., #)</li>
-                        <li>Starting and ending characters: Poner caracteres al inicio o al final 
-                            <ul>
-                                <li>STX: Start of text</li>
-                                <li>ETX: End of text</li>
-                            </ul>
-                        </li>
-                        <li>Starting and ending characters, with bit stuffing: Se pone como marca de inicio y fin a la misma
+      </li>
+      <li>
+       Physical layer: Se envian codigos que no sean reconocidos por la capa de enlace (&amp;, %, ..., #)
+      </li>
+      <li>
+       Starting and ending characters: Poner caracteres al inicio o al final
+       <ul>
+        <li>
+         STX: Start of text
+        </li>
+        <li>
+         ETX: End of text
+        </li>
+       </ul>
+      </li>
+      <li>
+       Starting and ending characters, with bit stuffing: Se pone como marca de inicio y fin a la misma
                              cadena (01111110)
-
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-            <div id="Control de errores" class="tema2">
-                <h2>Control de errores</h2>
-                <p>Manejar los errores de transmisión, 2 formas:</p>
-                <ul>
-                    <li><strong>Correccion de errores</strong>: En base al error identificado, se arregla el frame en el destino (o se pide reeenvio del frame)</li>
-                    <li><strong>Deteccion de errores</strong>: Se identifica que lo que recibió el receptor es diferente a lo que se tiene. Normalmente se
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="tema2" id="Control de errores">
+    <h2>
+     Control de errores
+    </h2>
+    <p>
+     Manejar los errores de transmisión, 2 formas:
+    </p>
+    <ul>
+     <li>
+      <strong>
+       Correccion de errores
+      </strong>
+      : En base al error identificado, se arregla el frame en el destino (o se pide reeenvio del frame)
+     </li>
+     <li>
+      <strong>
+       Deteccion de errores
+      </strong>
+      : Se identifica que lo que recibió el receptor es diferente a lo que se tiene. Normalmente se
                         reenvía el frame
-                    </li>
-                    
-                    <iframe src="./OTROS/deteccion de errores.pdf" style="width:100%; height: 1000px" frameborder="0"></iframe>
-                </ul>
-                CRC mas usados:
-                <ul>
-                    <li>CRC 16: \(x^6 + x^{12} + x^5 + 1\)</li>
-                    <li>CRC 32: \( x^{32} + x^{23} + x^{22} + x^{16} + x^{12} + x^{11} + x^{10} + x^{8} + x^{7} + x^{5} + x^{4} + x^{2} + x + 1\)</li>
-                </ul>
-            </div>
-
-            <iframe src="./OTROS/taller fisica-enlace.pdf" style="width:100%; height: 1000px" frameborder="0"></iframe>
-
-            <div id="Control de flujo" class="tema2">
-                <h2>Control de flujo (flow control)</h2>
-                <ul>
-                    <li>Busca no ahogar al destino: Transmitir al destino en una velcocidad y cantidad prudentes (que soporte la otra maquina)</li>
-                    <li>Se mira la velocidad y cantidad soportados por el receptor</li>
-                    <li>Si el transmisor tiene menos buffers que el receptor, este no se ahogará</li>
-                </ul>
-
-                El flujo de forma general consiste en:
-                <ul>
-                    <li> Enviar un dato, el emisor inicia un timer que habrá sido calculado enviando un frame de prueba para calcular el tiempo estimado</li>
-                    <li>El receptor pasa a la capa de transporte el mensaje si no tiene errores</li>
-                    <li>Si tiene errores se solicita reenvio de info (si era CRC)</li>
-                    <li>El receptor envia un ACK indicando el ID del mensaje</li>
-                    <li>El emisor recibe el ACK si no se ha "vencido" el timer</li>
-                    <li>Si se venció envía nuevamente el mensaje</li>
-                </ul>
-
-                <div id="Mecanismos para control de buffer" class="tema3">
-                    <h3>Mecanismos para control de buffers</h3>
-                    <ul>
-                        <li>Simplex: Canal perfecto, Canal ruidoso. No hacen buen uso del medio, los datos no son muy fluidos</li>
-                        <li>Sliding window: son halfduplex o fullduplex, usan pipelining y hacen uso de piggy backing</li>
-                    </ul>
-                </div>
-                
-                    <div id="Canal perfecto" class="tema2">
-                        <h2>Canal perfecto</h2>
-                        <ul>
-                            <li>Todo se manda y recibe sin que nd se pierda o dañe</li>
-                            <li>Uno asume que todo siempre llega sin problemas</li>
-                        </ul>
-                    </div>
-
-                    <div id="Canal ruidoso" class="tema2">
-                        <h2>Canal ruidoso </h2>                        
-                        <ul>
-                            <li>A medida que llega información sin errores en el orden deseado lo va entregando a la capa de transporte</li>
-                        </ul>
-                        <p>Se pueden presentar distintos errores:</p>
-                        <ul>
-                            <li>Perdida de mensaje o rta: Para esto, apenas se envía o reenvía un msj CON us ID o numeros de secuencia ( 0 ó 1), 
-                                define un temporizador con un tiempo t.</li>
-                            <li>Si un ACK se pierde, pero llega otro ACK correspondiente a un siguiente mensaje, el emisor asume que el otro llegó bien</li>
-                        </ul>
-                    </div>
-
-                    <div id="Sliding window" class="tema2">
-                        <h3>Sliding window</h3>
-                        <ul>
-                            <li>Se envían mensajes sin importar si el destino me ha enviado un ACK.</li>
-                            <li>Si un ACK se pierde, se reenvia la info.</li>
-                        </ul>
-                        <div id="2 Formas" class="tema3">
-                            <h3>2 Formas</h3>
-                            <ul>
-                                <li>
-                                    Go back in: La ventana de recepcion solo recibe un frame. El numero de secuencia debe ser mayor (0, 1) (se necesitan mas numeros)
+     </li>
+     <iframe frameborder="0" src="./OTROS/deteccion de errores.pdf" style="width:100%; height: 1000px">
+     </iframe>
+    </ul>
+    CRC mas usados:
+    <ul>
+     <li>
+      CRC 16: \(x^6 + x^{12} + x^5 + 1\)
+     </li>
+     <li>
+      CRC 32: \( x^{32} + x^{23} + x^{22} + x^{16} + x^{12} + x^{11} + x^{10} + x^{8} + x^{7} + x^{5} + x^{4} + x^{2} + x + 1\)
+     </li>
+    </ul>
+   </div>
+   <iframe frameborder="0" src="./OTROS/taller fisica-enlace.pdf" style="width:100%; height: 1000px">
+   </iframe>
+   <div class="tema2" id="Control de flujo">
+    <h2>
+     Control de flujo (flow control)
+    </h2>
+    <ul>
+     <li>
+      Busca no ahogar al destino: Transmitir al destino en una velcocidad y cantidad prudentes (que soporte la otra maquina)
+     </li>
+     <li>
+      Se mira la velocidad y cantidad soportados por el receptor
+     </li>
+     <li>
+      Si el transmisor tiene menos buffers que el receptor, este no se ahogará
+     </li>
+    </ul>
+    El flujo de forma general consiste en:
+    <ul>
+     <li>
+      Enviar un dato, el emisor inicia un timer que habrá sido calculado enviando un frame de prueba para calcular el tiempo estimado
+     </li>
+     <li>
+      El receptor pasa a la capa de transporte el mensaje si no tiene errores
+     </li>
+     <li>
+      Si tiene errores se solicita reenvio de info (si era CRC)
+     </li>
+     <li>
+      El receptor envia un ACK indicando el ID del mensaje
+     </li>
+     <li>
+      El emisor recibe el ACK si no se ha "vencido" el timer
+     </li>
+     <li>
+      Si se venció envía nuevamente el mensaje
+     </li>
+    </ul>
+    <div class="tema3" id="Mecanismos para control de buffer">
+     <h3>
+      Mecanismos para control de buffers
+     </h3>
+     <ul>
+      <li>
+       Simplex: Canal perfecto, Canal ruidoso. No hacen buen uso del medio, los datos no son muy fluidos
+      </li>
+      <li>
+       Sliding window: son halfduplex o fullduplex, usan pipelining y hacen uso de piggy backing
+      </li>
+     </ul>
+    </div>
+    <div class="tema2" id="Canal perfecto">
+     <h2>
+      Canal perfecto
+     </h2>
+     <ul>
+      <li>
+       Todo se manda y recibe sin que nd se pierda o dañe
+      </li>
+      <li>
+       Uno asume que todo siempre llega sin problemas
+      </li>
+     </ul>
+    </div>
+    <div class="tema2" id="Canal ruidoso">
+     <h2>
+      Canal ruidoso
+     </h2>
+     <ul>
+      <li>
+       A medida que llega información sin errores en el orden deseado lo va entregando a la capa de transporte
+      </li>
+     </ul>
+     <p>
+      Se pueden presentar distintos errores:
+     </p>
+     <ul>
+      <li>
+       Perdida de mensaje o rta: Para esto, apenas se envía o reenvía un msj CON us ID o numeros de secuencia ( 0 ó 1), 
+                                define un temporizador con un tiempo t.
+      </li>
+      <li>
+       Si un ACK se pierde, pero llega otro ACK correspondiente a un siguiente mensaje, el emisor asume que el otro llegó bien
+      </li>
+     </ul>
+    </div>
+    <div class="tema2" id="Sliding window">
+     <h3>
+      Sliding window
+     </h3>
+     <ul>
+      <li>
+       Se envían mensajes sin importar si el destino me ha enviado un ACK.
+      </li>
+      <li>
+       Si un ACK se pierde, se reenvia la info.
+      </li>
+     </ul>
+     <div class="tema3" id="2 Formas">
+      <h3>
+       2 Formas
+      </h3>
+      <ul>
+       <li>
+        Go back in: La ventana de recepcion solo recibe un frame. El numero de secuencia debe ser mayor (0, 1) (se necesitan mas numeros)
                                     Numeros de secuencia = 0 - (tamaño de de la ventana de transmisión - 1)
-                                </li>
-                                <li>
-                                    Selective repition: Asume que el total de frames es diferente a 1
-                                </li>
-                            </ul>
-                        </div>
-        
-                        <div id="Go back in" class="tema2">
-                            <h2>Go back in</h2>
-                            <p>La ventana de recepción es de tamaño 1. La de transmisión del otro lado puede ser de cualquier tamaño</p>
-                            <ul> 
-                                <li>
-                                    Go back in: La ventana de recepcion solo recibe un frame. El numero de secuencia debe ser mayor (0, 1) (se necesitan mas numeros)
-                                    Numeros de secuencia = [0 - (tamaño de de la ventana de transmisión - 1)]                            
-                                </li>
-                                <li>Apenas se llega el ACK de un msj enviado, se libera el espacio donde estaba ese msj en la capa de 
-                                    transmisión del emisor 
-                                </li>
-                                <li>Si un mensaje (0) se pierde, cuando llega msj (1), este no se recibe y se retransmite desde el msj perdido</li>
-                                <li>Si se pierde un ACK:
+       </li>
+       <li>
+        Selective repition: Asume que el total de frames es diferente a 1
+       </li>
+      </ul>
+     </div>
+     <div class="tema2" id="Go back in">
+      <h2>
+       Go back in
+      </h2>
+      <p>
+       La ventana de recepción es de tamaño 1. La de transmisión del otro lado puede ser de cualquier tamaño
+      </p>
+      <ul>
+       <li>
+        Go back in: La ventana de recepcion solo recibe un frame. El numero de secuencia debe ser mayor (0, 1) (se necesitan mas numeros)
+                                    Numeros de secuencia = [0 - (tamaño de de la ventana de transmisión - 1)]
+       </li>
+       <li>
+        Apenas se llega el ACK de un msj enviado, se libera el espacio donde estaba ese msj en la capa de 
+                                    transmisión del emisor
+       </li>
+       <li>
+        Si un mensaje (0) se pierde, cuando llega msj (1), este no se recibe y se retransmite desde el msj perdido
+       </li>
+       <li>
+        Si se pierde un ACK:
                                         Si llegó otro ACK, asume que el otro llegó bien 
                                         Si no llegó nd retransmite.
-                                </li>
-                            </ul>
-                        </div>
-        
-                        <div id="Selectitive repition" class="tema2">
-                            <h2>Selectitive repition</h2>
-                            <p>La ventana de recepción es de tamaño  > 1</p>
-                            <ul>
-                                <li>No afecta el tamaño de buffers </li>
-                                <li>NUmeros de secuaencia: [0 - (tamaño ventana del emiso*2)-1]</li>
-                                <li>Situcaciones que pueden pasar:
-                                 <ul>
-                                    <li>Perdida de frame: Si tiene espacio recibe otro frame, y hasta que no esté el perdido no sube la info.
-                                        El receptor no envía los ACK de lo q ha recibido hasta q reciba lo perdido (esta es una forma) 
-                                        
-                                    </li>
-                                    <li>perdida de acknowledge: El receptor re-envia el ACK cuando el emisor envíe de nuevo el mismo frame</li>
-                                 </ul>   
-                                </li>
-        
-                                <strong>Aquí uno no supone que si un ACK posterior llegó los demas si.</strong>
-                            </ul>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                    
-                    <div class="cornell">
-                         <p class="ask">Pipelining</p>
-                        <hr/>
-                        <div class="rta"> Enviar mensajes  sin importar si me ha llegado la confirmación del receptor.</div>
-                    </div>
-
-                <div class="cornell">
-                    <p class="ask">Piggy backing</p>
-                    <hr/>
-                    <div class="rta">El receptor emite en el mensaje rta el acknowledge y lo que me envió el emisor en un mismo frame. 
-                        Hace mejor uso del canal (envia menos bits porque envia menos info de control)</div>
-                </div>
-
-                <div id="Buffers" class="tema3">
-                    <h3>Buffers en cada PC (ambos estan en la capa de enalce)</h3>
-                    <ul>
-                        <li>Ventana de recepción: Datos que van a llegar desde el medio fisico (esta no la quiero ahogar)</li>
-                        <li>Ventana de recepción: Capacidad en buffers de la capa de enlace para recibir info de la capa fisica. Maneja un bit de control (ID)</li>
-                        <li>Ventana de transmisión: Buffer de enlace para recibir info de capa de red.</li>
-                        <li>Espacio en memoria para que la capa superior me entregue lo que quiere que yo envie. Cuando entra la info aquí ya viene con el CRC</li>
-                    </ul>
-                </div>
-                
-
-                
-            </div>
-
-
-            <div id="Tipo de comunicación" class="tema2">
-                <h2>Tipo de comunicación</h2>
-                <ul>
-                    <li>SImplex: Uno habla, el otro escucha</li>
-                    <li>Duplex: Los 2 hablan al tiempo</li>
-                    <li>Half duplex: Los 2 hablan pero en turnos especificos</li>
-                </ul>
-            </div>
-            
-
-            <div id="Acceso al medio" class="tema2">
-                <h2>Acceso al medio (link access)</h2>
-                <p>Especifica las reglas con la cuales se transmitirán los frames</p>                
-                <ul>
-                    <li>Conexion punto a punto: </li>
-                    <li>Conexion multipunto: Un canal compartido por muchos puntos</li>
-                </ul>
-                protocolos pa control de errores, de flujo, framing y control de acceso al medio.
-                <ul>
-                    <li>HDLC: </li>
-                    <li>PPP:</li>
-                    <li>SLIP:</li>
-                </ul>
-                <strong>Las conexiones pueden ser logicamente punto a punto, pero fisicamente no y viceversa.</strong>
-
-
-                TIPOS DE ACCESO:
-                <ul>
-                    <li><strong>Multiplexación</strong>: Partir el canal en pedazos para que varios hablen (usandos en WAN)</li>
-                    <li>Conmutación: Enviar frames muy chiquitos para que las comunicaciones sean rapidas (usados en WAN)</li>
-                    <li>Controlado centralizado: Tener un 3ro  que controle la comunicación</li>
-
-                    <li>Controlado distribuido: Se mapea a todos los computadores sobre si quieren hablar o no (es muy lento porque 
+       </li>
+      </ul>
+     </div>
+     <div class="tema2" id="Selectitive repition">
+      <h2>
+       Selectitive repition
+      </h2>
+      <p>
+       La ventana de recepción es de tamaño  &gt; 1
+      </p>
+      <ul>
+       <li>
+        No afecta el tamaño de buffers
+       </li>
+       <li>
+        NUmeros de secuaencia: [0 - (tamaño ventana del emiso*2)-1]
+       </li>
+       <li>
+        Situcaciones que pueden pasar:
+        <ul>
+         <li>
+          Perdida de frame: Si tiene espacio recibe otro frame, y hasta que no esté el perdido no sube la info.
+                                        El receptor no envía los ACK de lo q ha recibido hasta q reciba lo perdido (esta es una forma)
+         </li>
+         <li>
+          perdida de acknowledge: El receptor re-envia el ACK cuando el emisor envíe de nuevo el mismo frame
+         </li>
+        </ul>
+       </li>
+       <strong>
+        Aquí uno no supone que si un ACK posterior llegó los demas si.
+       </strong>
+      </ul>
+     </div>
+    </div>
+    <div class="cornell" id="id13">
+     <p class="ask">
+      Pipelining
+     </p>
+     <hr/>
+     <div class="rta">
+      Enviar mensajes  sin importar si me ha llegado la confirmación del receptor.
+     </div>
+    </div>
+    <div class="cornell" id="id14">
+     <p class="ask">
+      Piggy backing
+     </p>
+     <hr/>
+     <div class="rta">
+      El receptor emite en el mensaje rta el acknowledge y lo que me envió el emisor en un mismo frame. 
+                        Hace mejor uso del canal (envia menos bits porque envia menos info de control)
+     </div>
+    </div>
+    <div class="tema3" id="Buffers">
+     <h3>
+      Buffers en cada PC (ambos estan en la capa de enalce)
+     </h3>
+     <ul>
+      <li>
+       Ventana de recepción: Datos que van a llegar desde el medio fisico (esta no la quiero ahogar)
+      </li>
+      <li>
+       Ventana de recepción: Capacidad en buffers de la capa de enlace para recibir info de la capa fisica. Maneja un bit de control (ID)
+      </li>
+      <li>
+       Ventana de transmisión: Buffer de enlace para recibir info de capa de red.
+      </li>
+      <li>
+       Espacio en memoria para que la capa superior me entregue lo que quiere que yo envie. Cuando entra la info aquí ya viene con el CRC
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="tema2" id="Tipo de comunicación">
+    <h2>
+     Tipo de comunicación
+    </h2>
+    <ul>
+     <li>
+      SImplex: Uno habla, el otro escucha
+     </li>
+     <li>
+      Duplex: Los 2 hablan al tiempo
+     </li>
+     <li>
+      Half duplex: Los 2 hablan pero en turnos especificos
+     </li>
+    </ul>
+   </div>
+   <div class="tema2" id="Acceso al medio">
+    <h2>
+     Acceso al medio (link access)
+    </h2>
+    <p>
+     Especifica las reglas con la cuales se transmitirán los frames
+    </p>
+    <ul>
+     <li>
+      Conexion punto a punto:
+     </li>
+     <li>
+      Conexion multipunto: Un canal compartido por muchos puntos
+     </li>
+    </ul>
+    protocolos pa control de errores, de flujo, framing y control de acceso al medio.
+    <ul>
+     <li>
+      HDLC:
+     </li>
+     <li>
+      PPP:
+     </li>
+     <li>
+      SLIP:
+     </li>
+    </ul>
+    <strong>
+     Las conexiones pueden ser logicamente punto a punto, pero fisicamente no y viceversa.
+    </strong>
+    TIPOS DE ACCESO:
+    <ul>
+     <li>
+      <strong>
+       Multiplexación
+      </strong>
+      : Partir el canal en pedazos para que varios hablen (usandos en WAN)
+     </li>
+     <li>
+      Conmutación: Enviar frames muy chiquitos para que las comunicaciones sean rapidas (usados en WAN)
+     </li>
+     <li>
+      Controlado centralizado: Tener un 3ro  que controle la comunicación
+     </li>
+     <li>
+      Controlado distribuido: Se mapea a todos los computadores sobre si quieren hablar o no (es muy lento porque 
                         tiene que recibir los turnos y luego antederlos)
-                        <ul>
-                            <li>Por bits: Se pasa un vector en el que cada quipo indica si quiere hablar o no</li>
-                            <li>Controlado distribuido por token: Se rotan entre la red (topologia anillo logicamente) el token, si está vacio y necesito enviar algo, 
+      <ul>
+       <li>
+        Por bits: Se pasa un vector en el que cada quipo indica si quiere hablar o no
+       </li>
+       <li>
+        Controlado distribuido por token: Se rotan entre la red (topologia anillo logicamente) el token, si está vacio y necesito enviar algo, 
                                 escribo ahí, else: Miro si tiene un msj, si iba pa mi lo ercibo y dejo vacio el token, si no iba pa mi lo ignoro.
         
                                 Si el token se pierde (por luz o algo): El monitor genera otro token. Cada que da una vuelta el token, el monitor 
                                 avisa que revisó q el token estuviese vivo ( con un chulito)
         
                                 Si el token llega y no tiene el chulito, las maquinas deciden internamente quien va a ser monitor.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        Contienda: Se pelean todos por el medio 
-                        <li>Contienda sorda:  Cada que alguien queria hablar, hablaba, peeero se podia mezclar mi msj con el de otro pc si hablaba 
+       </li>
+      </ul>
+     </li>
+     <li>
+      Contienda: Se pelean todos por el medio
+      <li>
+       Contienda sorda:  Cada que alguien queria hablar, hablaba, peeero se podia mezclar mi msj con el de otro pc si hablaba 
                             podía dañar mi msj. Se programan ventanas de tiempo para hablar.
-                            <ul>
-                                <li>Puro </li>
-                                <li>Ranurado</li>
-                            </ul> 
-                        </li>
-                        <li>Contienda Con escucha (CSMA): Si el medio está ocupado, espera, sino transmite.
+       <ul>
+        <li>
+         Puro
+        </li>
+        <li>
+         Ranurado
+        </li>
+       </ul>
+      </li>
+      <li>
+       Contienda Con escucha (CSMA): Si el medio está ocupado, espera, sino transmite.
                             Lo puede hacer de forma:
-                            <ul>
-                                <li><strong>1 Persistente</strong> Si está ocupado el medio, se queda esperando. 
-                                    Si hay varios esperando, cuandoo se libere el canal probablemente habrá colisión</li>
-                                <li><strong>No persistente</strong> Si el medio está ocupado vayase y luego vuelve</li>
-                                <li><strong>p Persistente</strong> Si está ocupado el medio, calcula la probabilidad de q en tantos minutos el canal está vacio, y en base a ello
-                                sabe cuando volver</li>
-
-                            </ul>
-
-                            </li>
-
-                        <li>CSMA Colition detection (CD): Si detectan colision colision, se quedan callados
-                            <ul>
-                                <li>No hay estación arbitro</li>
-                                <li>Dominio de colisión: Grupo de estaciones con el que compito por el medio</li>
-                                <li>Todas las estaciones escuchan y miran si van para ellos</li>
-                                <li>3 tipos:
-                                    <ul>
-                                        <li>Round Tripe time</li>
-                                        <li>IFG (Interframe Gap): Espacio que hay entre el envio de frames</li>
-                                        <li>Backoff time: Tiempo que tiene que psar antes de volver a transmitir</li>
-                                        <li>Señal JAM: Señal que indica que hubo colision</li>
-                                        
-                                    </ul>
-                                </li>
-                                <strong>Buscar el Diagrama de flujo de ethernet de la profe</strong>
-                            </ul>
-                        </li>
-                        <li>CSMA Colition Anticipation (CA): Antes de entrar la maquina mira si esta libre, si en t tiempo no se ha metido nadie transmite. Es decir, tambien aplica el CD</li>
-
-                        
-
-                    </li>
-                </ul>
-
-                Topologia fisica != Topologia Logica. Ej: Tener topologia Fisica BUS, pero en la logica un anillo 
-            </div>
-
-            <div id="Subcapas de la capa de enlace" class="tema2">
-                <h2>Subcapas de la capa de enlace</h2>
-                <p>Segun IEEE 802 se fragementó en 2 subcapas (Se dividio asi para hacer facil el acceso al medio compartido):</p>
-                <ul>
-                    <li>LLC (Control de enlace lógico): Habla con la capa superior</li>
-                    <li><a href="#Direcciones MAC">MAC</a> (Control de acceso al medio): Determina en que momento puedo usar el medio</li>
-                </ul>
-            </div>
-            
-
-            <div id="Direcciones MAC" class="tema3">
-                <h3>Direcciones MAC</h3>
-                <p>Identificador unico para un equipo</p>
-                <ul>
-                    <li>Tiene alcance de red LAN</li>
-                    <li>Se tiene una direccion MAC por cada tarjeta de red</li>
-                    <li>Estructura: 64 bits</li>
-                    <li>6 bytes de tamaño</li>
-                    <li>Tienen alcance local, osea que mi direccion puede estar repetida en otra red</li>
-                    <li>Las direcciones pueden ser unicast (asignada a un dispositivo) o multicast (asignado a un grupo de dispositivos)</li>
-                </ul>
-                <div class="cornell">
-                     <p class="ask">Direccion de broadcast</p>
-                    <hr/>
-                    <div class="rta">Direccion MAC (FF-FF-FF-FF-FF-FF) de todos los equipos de una red, permite enviar un mensaje a 
+       <ul>
+        <li>
+         <strong>
+          1 Persistente
+         </strong>
+         Si está ocupado el medio, se queda esperando. 
+                                    Si hay varios esperando, cuandoo se libere el canal probablemente habrá colisión
+        </li>
+        <li>
+         <strong>
+          No persistente
+         </strong>
+         Si el medio está ocupado vayase y luego vuelve
+        </li>
+        <li>
+         <strong>
+          p Persistente
+         </strong>
+         Si está ocupado el medio, calcula la probabilidad de q en tantos minutos el canal está vacio, y en base a ello
+                                sabe cuando volver
+        </li>
+       </ul>
+      </li>
+      <li>
+       CSMA Colition detection (CD): Si detectan colision colision, se quedan callados
+       <ul>
+        <li>
+         No hay estación arbitro
+        </li>
+        <li>
+         Dominio de colisión: Grupo de estaciones con el que compito por el medio
+        </li>
+        <li>
+         Todas las estaciones escuchan y miran si van para ellos
+        </li>
+        <li>
+         3 tipos:
+         <ul>
+          <li>
+           Round Tripe time
+          </li>
+          <li>
+           IFG (Interframe Gap): Espacio que hay entre el envio de frames
+          </li>
+          <li>
+           Backoff time: Tiempo que tiene que psar antes de volver a transmitir
+          </li>
+          <li>
+           Señal JAM: Señal que indica que hubo colision
+          </li>
+         </ul>
+        </li>
+        <strong>
+         Buscar el Diagrama de flujo de ethernet de la profe
+        </strong>
+       </ul>
+      </li>
+      <li>
+       CSMA Colition Anticipation (CA): Antes de entrar la maquina mira si esta libre, si en t tiempo no se ha metido nadie transmite. Es decir, tambien aplica el CD
+      </li>
+     </li>
+    </ul>
+    Topologia fisica != Topologia Logica. Ej: Tener topologia Fisica BUS, pero en la logica un anillo
+   </div>
+   <div class="tema2" id="Subcapas de la capa de enlace">
+    <h2>
+     Subcapas de la capa de enlace
+    </h2>
+    <p>
+     Segun IEEE 802 se fragementó en 2 subcapas (Se dividio asi para hacer facil el acceso al medio compartido):
+    </p>
+    <ul>
+     <li>
+      LLC (Control de enlace lógico): Habla con la capa superior
+     </li>
+     <li>
+      <a href="#Direcciones MAC">
+       MAC
+      </a>
+      (Control de acceso al medio): Determina en que momento puedo usar el medio
+     </li>
+    </ul>
+   </div>
+   <div class="tema3" id="Direcciones MAC">
+    <h3>
+     Direcciones MAC
+    </h3>
+    <p>
+     Identificador unico para un equipo
+    </p>
+    <ul>
+     <li>
+      Tiene alcance de red LAN
+     </li>
+     <li>
+      Se tiene una direccion MAC por cada tarjeta de red
+     </li>
+     <li>
+      Estructura: 64 bits
+     </li>
+     <li>
+      6 bytes de tamaño
+     </li>
+     <li>
+      Tienen alcance local, osea que mi direccion puede estar repetida en otra red
+     </li>
+     <li>
+      Las direcciones pueden ser unicast (asignada a un dispositivo) o multicast (asignado a un grupo de dispositivos)
+     </li>
+    </ul>
+    <div class="cornell" id="id20">
+     <p class="ask">
+      Direccion de broadcast
+     </p>
+     <hr/>
+     <div class="rta">
+      Direccion MAC (FF-FF-FF-FF-FF-FF) de todos los equipos de una red, permite enviar un mensaje a 
                         todos los de una red
-                    </div>
-                </div>
-Empaquetado: {preambulo} {Delimitador partida (01111110)} {Direccion destino MAC} {Direccion Origen MAC} {Dir IP destino} {Dir IP origen} {Longitud} {datos LLC} 
+     </div>
+    </div>
+    Empaquetado: {preambulo} {Delimitador partida (01111110)} {Direccion destino MAC} {Direccion Origen MAC} {Dir IP destino} {Dir IP origen} {Longitud} {datos LLC} 
 {PAD} {secuencia verificacion }
 
                 tamaño mminimo de frame  64 bytes, con el fin de que todos alcancen a escuchar
-                <br></br>
-                La direccion destino va primero para que las mquinas detecten rapido si la info iba para ellos
-                <ul>
-                    <li>PAD: Relleno que va sii el frame es menor a 64 bytes</li>
-                    <li>el tamaño maximo de frame es 1522 bytes</li>
-                    <li>Secuencia verificacion (CRC-32 por ej)</li>
-                    <li>Longitud: 0x800 en ipv4 y 0x.806 para ipv6</li>
-                </ul>
-                
-                
-                
-            </div>
-
-            <div class="cornell">
-                 <p class="ask">TAREA: Como se garantiza que no haya direcciones MAC repetidas?</p>
-                <hr/>
-                <div class="rta">Es poco probable por el estandar. Si hay 2 iguales se bloquean entre ellas. Uno se puede comunicar con el usuario final </div>
-            </div>
-            
-            
-            
-            
-        </div>
-
-
-        
-    </body>
+    <br/>
+    La direccion destino va primero para que las mquinas detecten rapido si la info iba para ellos
+    <ul>
+     <li>
+      PAD: Relleno que va sii el frame es menor a 64 bytes
+     </li>
+     <li>
+      el tamaño maximo de frame es 1522 bytes
+     </li>
+     <li>
+      Secuencia verificacion (CRC-32 por ej)
+     </li>
+     <li>
+      Longitud: 0x800 en ipv4 y 0x.806 para ipv6
+     </li>
+    </ul>
+   </div>
+   <div class="cornell" id="id21">
+    <p class="ask">
+     TAREA: Como se garantiza que no haya direcciones MAC repetidas?
+    </p>
+    <hr/>
+    <div class="rta">
+     Es poco probable por el estandar. Si hay 2 iguales se bloquean entre ellas. Uno se puede comunicar con el usuario final
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>
+<script defer="" src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert">
+</script>

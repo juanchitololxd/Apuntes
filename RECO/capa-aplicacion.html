@@ -1,362 +1,576 @@
 <html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-        <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
-<script src="./../main.js"></script>
-    </head>
-    <body>
-        <div class="setter">
-            <button onclick="setStyles()">Cambiar</button>
-        </div>
-        <div id="Capa de aplicación" class="tema1">
-            <h1>Capa de aplicación</h1>
-            <p>Es la aplicación que conecta con el usuario. Es la encargada de contactar con el user</p>
-            <p>Las aplciaciones del usuario corren SOBRE la capa (seria la "capa 8"), pero no es la capa como tal</p>
-            <p>Hay comunaciones</p>
-        </div>
-
-        <div id="Cliente/Servidor" class="tema2">
-            <h2>Cliente/Servidor</h2>
-            <p>Puede ser una relación de software o de hardware</p>
-            <p>Cliente: El q consume </p>
-            <p>Servidor: El que presta los servicios</p>
-            <p>Un server está customizadas sus partes para que no tenga problemas de calentamiento y cosas asi, aparte
-                de que es mas costoso 
-            </p>
-        </div>
-
-        <div id="P2P" class="tema2">
-            <h2>P2P</h2>
-            <p>Pair to pair</p>
-            <p>Entre 2 de un mismo nivelgeneran un servicio. </p>
-            <p>Ej: 2 maquinas se prestanservicios entre ellas</p>
-        </div>
-        
-
-        <div class="cornell">
-             <p class="ask">Apps capa 8</p>
-            <hr/>
-            <div class="rta">Aplicaciones de usuario</div>
-        </div>
-
-        <div class="cornell">
-             <p class="ask">Socket</p>
-            <hr/>
-            <div class="rta">Conexión del origen con el servidor. En cada extremo tieneun puerto</div>
-        </div>
-
-
-        <div id="Puerto" class="tema2">
-            <h2>Puerto</h2>
-            <ul>
-                <li>Al usuario se le asigna un puerto random, los servicios normalmente tienen uno definido</li>
-                <li>Direcciones de la capa de transporte que permiten enviar datos a la red</li>
-                <li>Cuando 2 browsers se conectan al mismo webServer, el webServer crea un proceso hijo con ese puerto</li>
-            </ul>
-            <ul>
-                
-                <li>Se pueden tener abiertos 655536</li>
-                <li>Los primeros 1023 son usados para servicios comunes de internet:
-                    <ul>
-                        <li>Correo</li>
-                        <li>Web</li>
-                    </ul>
-                </li>
-                <li>1024-49151 son puertos registrados, es decir puertos comunes:
-                    <ul>
-                        <li>Tomcat: 8080</li>
-                        <li>Oracle: el q es xD</li>
-                    </ul>
-                </li>
-                <li>Puertos dinámicos o privaods, los otros xD, va de 49152 a 65535</li>
-            </ul>
-        </div>
-
-
-
-        <div id="Protocolos" class="tema2">
-            <h2>Protocolos</h2>
-            <p>Si empiezan o terminan con S son seguros</p>
-
-            <p>Web:</p>
-            <ul>
-                <li>HTTP</li>
-                <li>HTTPS</li>
-            </ul>
-            <p>Correo:</p>
-            <ul>
-                <li>SMTP</li>
-                <li>POP3</li>
-                <li>IMAP</li>
-            </ul>
-        <p>Terminal remota:</p>
-        <ul>
-            <li>Telnet</li>
-            <li>SSH</li>
-        </ul>
-
-        <p>Transferencia de archivos</p>
-
-        <ul>
-            <li>FTP</li>
-            <li>NFS</li>
-            <li>SFTP</li>
-        </ul>
-        <P>Otros:</P>
-        <ul>
-            <li><a href="#DHCP">DHCP</a></li>
-            <li>DNS</li>
-            <li>SNMP</li>
-        </ul>
-        </div>
-
-        <div id="DHCP" class="tema2">
-            <h2>DHCP</h2>
-            <p>Protocolo que asigna dirección IP a un dispositivo de forma aleatoria</p>
-            <ul>
-                <li>Puerto server: 67</li>
-                <li>Puerto cliente: 68</li>
-            </ul>
-
-            <p>Da la IP con el protocolo <strong>DORA</strong></p>
-
-            
-            <ul>
-                <li>D: Discover: User solicita IP a la red, para eso hace un msg broadcast
+ <head>
+  <meta charset="utf-8"/>
+  <link href="./../estilos/oscuro.css" id="style" rel="stylesheet"/>
+  <script src="./../main.js">
+  </script>
+ </head>
+ <body>
+  <div class="setter">
+   <button onclick="setStyles()">
+    Cambiar
+   </button>
+  </div>
+  <div class="tema1" id="Capa de aplicación">
+   <h1>
+    Capa de aplicación
+   </h1>
+   <p>
+    Es la aplicación que conecta con el usuario. Es la encargada de contactar con el user
+   </p>
+   <p>
+    Las aplciaciones del usuario corren SOBRE la capa (seria la "capa 8"), pero no es la capa como tal
+   </p>
+   <p>
+    Hay comunaciones
+   </p>
+  </div>
+  <div class="tema2" id="Cliente/Servidor">
+   <h2>
+    Cliente/Servidor
+   </h2>
+   <p>
+    Puede ser una relación de software o de hardware
+   </p>
+   <p>
+    Cliente: El q consume
+   </p>
+   <p>
+    Servidor: El que presta los servicios
+   </p>
+   <p>
+    Un server está customizadas sus partes para que no tenga problemas de calentamiento y cosas asi, aparte
+                de que es mas costoso
+   </p>
+  </div>
+  <div class="tema2" id="P2P">
+   <h2>
+    P2P
+   </h2>
+   <p>
+    Pair to pair
+   </p>
+   <p>
+    Entre 2 de un mismo nivelgeneran un servicio.
+   </p>
+   <p>
+    Ej: 2 maquinas se prestanservicios entre ellas
+   </p>
+  </div>
+  <div class="cornell" id="id4">
+   <p class="ask">
+    Apps capa 8
+   </p>
+   <hr/>
+   <div class="rta">
+    Aplicaciones de usuario
+   </div>
+  </div>
+  <div class="cornell" id="id5">
+   <p class="ask">
+    Socket
+   </p>
+   <hr/>
+   <div class="rta">
+    Conexión del origen con el servidor. En cada extremo tieneun puerto
+   </div>
+  </div>
+  <div class="tema2" id="Puerto">
+   <h2>
+    Puerto
+   </h2>
+   <ul>
+    <li>
+     Al usuario se le asigna un puerto random, los servicios normalmente tienen uno definido
+    </li>
+    <li>
+     Direcciones de la capa de transporte que permiten enviar datos a la red
+    </li>
+    <li>
+     Cuando 2 browsers se conectan al mismo webServer, el webServer crea un proceso hijo con ese puerto
+    </li>
+   </ul>
+   <ul>
+    <li>
+     Se pueden tener abiertos 655536
+    </li>
+    <li>
+     Los primeros 1023 son usados para servicios comunes de internet:
+     <ul>
+      <li>
+       Correo
+      </li>
+      <li>
+       Web
+      </li>
+     </ul>
+    </li>
+    <li>
+     1024-49151 son puertos registrados, es decir puertos comunes:
+     <ul>
+      <li>
+       Tomcat: 8080
+      </li>
+      <li>
+       Oracle: el q es xD
+      </li>
+     </ul>
+    </li>
+    <li>
+     Puertos dinámicos o privaods, los otros xD, va de 49152 a 65535
+    </li>
+   </ul>
+  </div>
+  <div class="tema2" id="Protocolos">
+   <h2>
+    Protocolos
+   </h2>
+   <p>
+    Si empiezan o terminan con S son seguros
+   </p>
+   <p>
+    Web:
+   </p>
+   <ul>
+    <li>
+     HTTP
+    </li>
+    <li>
+     HTTPS
+    </li>
+   </ul>
+   <p>
+    Correo:
+   </p>
+   <ul>
+    <li>
+     SMTP
+    </li>
+    <li>
+     POP3
+    </li>
+    <li>
+     IMAP
+    </li>
+   </ul>
+   <p>
+    Terminal remota:
+   </p>
+   <ul>
+    <li>
+     Telnet
+    </li>
+    <li>
+     SSH
+    </li>
+   </ul>
+   <p>
+    Transferencia de archivos
+   </p>
+   <ul>
+    <li>
+     FTP
+    </li>
+    <li>
+     NFS
+    </li>
+    <li>
+     SFTP
+    </li>
+   </ul>
+   <p>
+    Otros:
+   </p>
+   <ul>
+    <li>
+     <a href="#DHCP">
+      DHCP
+     </a>
+    </li>
+    <li>
+     DNS
+    </li>
+    <li>
+     SNMP
+    </li>
+   </ul>
+  </div>
+  <div class="tema2" id="DHCP">
+   <h2>
+    DHCP
+   </h2>
+   <p>
+    Protocolo que asigna dirección IP a un dispositivo de forma aleatoria
+   </p>
+   <ul>
+    <li>
+     Puerto server: 67
+    </li>
+    <li>
+     Puerto cliente: 68
+    </li>
+   </ul>
+   <p>
+    Da la IP con el protocolo
+    <strong>
+     DORA
+    </strong>
+   </p>
+   <ul>
+    <li>
+     D: Discover: User solicita IP a la red, para eso hace un msg broadcast
                      por el port: 68 a los servidores DHCP con IP = 0.0.0.0. Funciona porque
-                    todos estan conectados al mismo puerto</li>
-                <li>O: Offer: Cada Servidor envía una IP</li>
-                <li>R: Request: El servidor escoge una y manda un msg broadcast diciendo que IP acepta, mas DNS, netMask y gateway</li>
-                <li>A: Acknowledge: Server dice OK </li>
-            </ul>
-            <p>Hay 2 formas:</p>
-            <div id="Estática" class="tema3">
-                <h3>Estática</h3>
-                <p>Siempre asigna el mismo dispositivo. Identifica 
-                    los dispositivos en base a su dirección MAC</p>
-            </div>
-
-            <div id="Dinámica" class="tema3">
-                <h3>Dinámica</h3>
-                <p>Se le asigna un rango, y asigna aleatoriamente</p>
-            </div>
-            
-            <p>Para que DHCP nunca se caiga existen unas practicas:</p>
-                <ul>
-                    <li>Tener varios DHCP servers con rangos distintos</li>
-                    <li>DHCP Failover cluster: <ul>
-                        <li>Se tiene un Nodo (DHCP Server) pasivo que escucha lo que hace un nodo activo.</li>
-                        <li>Un nodo activo 1-- * nodos pasivos</li>
-                        <li>La ventaja del nodo pasivo es: No hay. La consecuencia es q los serivdores pueden asignar menos</li>
-                    </ul></li>
-                    <li></li>
-                </ul>
-
-            <p>Protocolo de transporte: UDP</p>
-            
-        </div>
-
-        <div id="DNS" class="tema2">
-            <h2>DNS</h2>
-            <ul>
-                <li>Protocolo que traduce nombres en direcciones IP</li>
-                <li>DNS reverso: Verifica que una dirección efectivamente corresponda a una IP.
-                    <ul>
-                        <li>Los correos las usan para validar que una IP corresponde a un dominio</li>
-                    </ul>
-                </li>    
-                <li>Se pueden configurar 1..* DNS por maquina. Pero si el primero no supo, los otros 
-                    configurados no van a intentar buscar la equivalencia del nombre 
-                </li>            
-                <li>Los dominios se guardan en cache: No aplica para root server</li>
-            </ul>
-
-            <div id="Archivos" class="tema3">
-                <h3>Archivos </h3>
-                <div id="Linux" class="tema4">
-                    <h4>Linux</h4>
-                    <ul>
-                        <li>/etc/named.conf</li>
-                        <li>/.../../named.soa</li>
-                        <li>/.../../named.ca</li>
-                    </ul>
-                </div>
-                <div id="Windows" class="tema4">
-                    <h4>Windows</h4>
-                    <ul>
-                        <li>Programs - Administrative tools -DNS</li>
-                    </ul>
-                </div>                
-            </div>
-            
-
-            <div id="Estructura" class="tema3">
-                <h3>Estructura</h3>
-                <ul>
-                    <li>DNS root: .</li>
-                    <li>Top level domains: .edu, .dov, country domains etc.</li>
-                    <li>Second level: tutodero.com</li>
-                    <li>Sub domain: juanchito.tutodero.com</li>
-                    <li>Host: imap.juanchito.tutodero.com</li>
-                </ul>
-                <ul>
-                    <li>El hecho de que no sea centralizado permite facil y rapido mantenimiento</li>
-                </ul>
-            <div class="cornell">
-                <p class="ask">Diferencia entre dominio genérico y patrociando</p>
-               <hr/>
-               <div class="rta">Los que no son patrocinados (.cat, .coop etc.), los que poneen la infraestructura son los grandes dueños
+                    todos estan conectados al mismo puerto
+    </li>
+    <li>
+     O: Offer: Cada Servidor envía una IP
+    </li>
+    <li>
+     R: Request: El servidor escoge una y manda un msg broadcast diciendo que IP acepta, mas DNS, netMask y gateway
+    </li>
+    <li>
+     A: Acknowledge: Server dice OK
+    </li>
+   </ul>
+   <p>
+    Hay 2 formas:
+   </p>
+   <div class="tema3" id="Estática">
+    <h3>
+     Estática
+    </h3>
+    <p>
+     Siempre asigna el mismo dispositivo. Identifica 
+                    los dispositivos en base a su dirección MAC
+    </p>
+   </div>
+   <div class="tema3" id="Dinámica">
+    <h3>
+     Dinámica
+    </h3>
+    <p>
+     Se le asigna un rango, y asigna aleatoriamente
+    </p>
+   </div>
+   <p>
+    Para que DHCP nunca se caiga existen unas practicas:
+   </p>
+   <ul>
+    <li>
+     Tener varios DHCP servers con rangos distintos
+    </li>
+    <li>
+     DHCP Failover cluster:
+     <ul>
+      <li>
+       Se tiene un Nodo (DHCP Server) pasivo que escucha lo que hace un nodo activo.
+      </li>
+      <li>
+       Un nodo activo 1-- * nodos pasivos
+      </li>
+      <li>
+       La ventaja del nodo pasivo es: No hay. La consecuencia es q los serivdores pueden asignar menos
+      </li>
+     </ul>
+    </li>
+    <li>
+    </li>
+   </ul>
+   <p>
+    Protocolo de transporte: UDP
+   </p>
+  </div>
+  <div class="tema2" id="DNS">
+   <h2>
+    DNS
+   </h2>
+   <ul>
+    <li>
+     Protocolo que traduce nombres en direcciones IP
+    </li>
+    <li>
+     DNS reverso: Verifica que una dirección efectivamente corresponda a una IP.
+     <ul>
+      <li>
+       Los correos las usan para validar que una IP corresponde a un dominio
+      </li>
+     </ul>
+    </li>
+    <li>
+     Se pueden configurar 1..* DNS por maquina. Pero si el primero no supo, los otros 
+                    configurados no van a intentar buscar la equivalencia del nombre
+    </li>
+    <li>
+     Los dominios se guardan en cache: No aplica para root server
+    </li>
+   </ul>
+   <div class="tema3" id="Archivos">
+    <h3>
+     Archivos
+    </h3>
+    <div class="tema4" id="Linux">
+     <h4>
+      Linux
+     </h4>
+     <ul>
+      <li>
+       /etc/named.conf
+      </li>
+      <li>
+       /.../../named.soa
+      </li>
+      <li>
+       /.../../named.ca
+      </li>
+     </ul>
+    </div>
+    <div class="tema4" id="Windows">
+     <h4>
+      Windows
+     </h4>
+     <ul>
+      <li>
+       Programs - Administrative tools -DNS
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="tema3" id="Estructura">
+    <h3>
+     Estructura
+    </h3>
+    <ul>
+     <li>
+      DNS root: .
+     </li>
+     <li>
+      Top level domains: .edu, .dov, country domains etc.
+     </li>
+     <li>
+      Second level: tutodero.com
+     </li>
+     <li>
+      Sub domain: juanchito.tutodero.com
+     </li>
+     <li>
+      Host: imap.juanchito.tutodero.com
+     </li>
+    </ul>
+    <ul>
+     <li>
+      El hecho de que no sea centralizado permite facil y rapido mantenimiento
+     </li>
+    </ul>
+    <div class="cornell" id="id16">
+     <p class="ask">
+      Diferencia entre dominio genérico y patrociando
+     </p>
+     <hr/>
+     <div class="rta">
+      Los que no son patrocinados (.cat, .coop etc.), los que poneen la infraestructura son los grandes dueños
                    de la red. Los patrocinados ps no (.com, .org)
-               </div>
-           </div>
-
-           <strong>En colombia lo administra CO internet SAS</strong>
-
-           <div class="cornell">
-             <p class="ask">Tipos de consulta y diferencia.</p>
-            <hr/>
-            <div class="rta">Iterativa y recursiva. Lo que cambia es quien pregunta. La mejor es la iterativa
+     </div>
+    </div>
+    <strong>
+     En colombia lo administra CO internet SAS
+    </strong>
+    <div class="cornell" id="id17">
+     <p class="ask">
+      Tipos de consulta y diferencia.
+     </p>
+     <hr/>
+     <div class="rta">
+      Iterativa y recursiva. Lo que cambia es quien pregunta. La mejor es la iterativa
                 porque en la recursiva siempre se cargaría a los servidores top level
-            </div>
-           </div>
-
-
-           <div id="Codigos de respuestas" class="tema3">
-            <h3>Codigos de respuestas</h3>
-            <table>
-                <tr>
-                    <th>Mensaje</th>
-                    <th>Explicación</th>
-                </tr>
-                <tr>
-                    <td>~100-200</td>
-                    <td>Exitoso</td>
-                </tr>
-                <tr>
-                    <td>~300</td>
-                    <td>Redirección a otro directorio o sitio web</td>
-                </tr>
-                <tr>
-                    <td>~400</td>
-                    <td>Errores de usuario</td>
-                </tr>
-                <tr>
-                    <td>~500</td>
-                    <td>Error de servidor</td>
-                </tr>
-            </table>
-           </div>
-           
-
-           <div id="DNS Tipos" class="tema4">
-            <h4>DNS Tipos</h4>
-            <ul>
-                <li>Primario: El principal</li>
-                <li>Secundario: Copias. Se actualiza si la versión de el y el primario no coincide.</li>
-            </ul>
-            <p> https://root-servers.org/</p>
-            <p>Todas las copias de los root servers son las que aparecen en la URL, y todas estan funcionando actualmente</p>
-           </div>
-
-
-           
-
-           
-            <div id="Archivo DNS" class="tema4">
-                <h4>Archivo DNS</h4>
-                <p>Si se tiene subdominios, van en el archivo de la empresa</p>
-
-            </div>
-
-            
-            </div>
-
-            
-            <div class="summary">
-                <div class="cornell">
-                    <p class="ask">Nombres de dominio</p>
-                   <hr/>
-                   <div class="rta">Nombre que representa a un grupo de equipos en la red.
-                   </div>
-               </div>
-               <div class="cornell">
-                    <p class="ask">Uniform resource Identifier</p>
-                   <hr/>
-                   <div class="rta">URI. Permite acceder a un servicio por internet</div>
-               </div>
-               <div class="cornell">
-                    <p class="ask">URI y URL. Diferencia?</p>
-                   <hr/>
-                   <div class="rta">URI: protocolo://servidor.dominio:puerto/path.
-                       URL: http://servidor.dominio:80/path 
-                   </div>
-               </div>
-               <div class="cornell">
-                    <p class="ask">Alias</p>
-                   <hr/>
-                   <div class="rta">Varias formas de nombrar a una maquina. Permite para que 
-                    una maquina pueda resolver varios servicios (cada servicio lo llamará  de una forma distinta) </div>
-               </div>
-   
-            </div>
-
-            
-        </div>
-        
-        <div id="Http" class="tema3">
-            <h3>Http</h3>
-            <p>Se baja el html de arranque y los recursos asociados</p>
-            <div id="conexion persistente" class="tema4">
-                <h4>conexion persistente</h4>
-                <p>Se baja todo en una conexión. Es peligroso porque no puede 
+     </div>
+    </div>
+    <div class="tema3" id="Codigos de respuestas">
+     <h3>
+      Codigos de respuestas
+     </h3>
+     <table>
+      <tr>
+       <th>
+        Mensaje
+       </th>
+       <th>
+        Explicación
+       </th>
+      </tr>
+      <tr>
+       <td>
+        ~100-200
+       </td>
+       <td>
+        Exitoso
+       </td>
+      </tr>
+      <tr>
+       <td>
+        ~300
+       </td>
+       <td>
+        Redirección a otro directorio o sitio web
+       </td>
+      </tr>
+      <tr>
+       <td>
+        ~400
+       </td>
+       <td>
+        Errores de usuario
+       </td>
+      </tr>
+      <tr>
+       <td>
+        ~500
+       </td>
+       <td>
+        Error de servidor
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="tema4" id="DNS Tipos">
+     <h4>
+      DNS Tipos
+     </h4>
+     <ul>
+      <li>
+       Primario: El principal
+      </li>
+      <li>
+       Secundario: Copias. Se actualiza si la versión de el y el primario no coincide.
+      </li>
+     </ul>
+     <p>
+      https://root-servers.org/
+     </p>
+     <p>
+      Todas las copias de los root servers son las que aparecen en la URL, y todas estan funcionando actualmente
+     </p>
+    </div>
+    <div class="tema4" id="Archivo DNS">
+     <h4>
+      Archivo DNS
+     </h4>
+     <p>
+      Si se tiene subdominios, van en el archivo de la empresa
+     </p>
+    </div>
+   </div>
+   <div class="summary">
+    <div class="cornell" id="id21">
+     <p class="ask">
+      Nombres de dominio
+     </p>
+     <hr/>
+     <div class="rta">
+      Nombre que representa a un grupo de equipos en la red.
+     </div>
+    </div>
+    <div class="cornell" id="id22">
+     <p class="ask">
+      Uniform resource Identifier
+     </p>
+     <hr/>
+     <div class="rta">
+      URI. Permite acceder a un servicio por internet
+     </div>
+    </div>
+    <div class="cornell" id="id23">
+     <p class="ask">
+      URI y URL. Diferencia?
+     </p>
+     <hr/>
+     <div class="rta">
+      URI: protocolo://servidor.dominio:puerto/path.
+                       URL: http://servidor.dominio:80/path
+     </div>
+    </div>
+    <div class="cornell" id="id24">
+     <p class="ask">
+      Alias
+     </p>
+     <hr/>
+     <div class="rta">
+      Varias formas de nombrar a una maquina. Permite para que 
+                    una maquina pueda resolver varios servicios (cada servicio lo llamará  de una forma distinta)
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="tema3" id="Http">
+   <h3>
+    Http
+   </h3>
+   <p>
+    Se baja el html de arranque y los recursos asociados
+   </p>
+   <div class="tema4" id="conexion persistente">
+    <h4>
+     conexion persistente
+    </h4>
+    <p>
+     Se baja todo en una conexión. Es peligroso porque no puede 
                     atender a otros usuarios
-                </p>
-            </div>
-
-            <div id="Conexión no persistente" class="tema4">
-                <h4>Conexión no persistente</h4>
-                <p>Se cierra la conexión luego de que llega algo</p>
-            </div>
-            
-            
-        </div>
-
-
-        <div id="Correos" class="tema2">
-            <h2>Correos</h2>
-            <p>Se tienen protocolos de subida y bajada porque los de bajada tienen seguridad
+    </p>
+   </div>
+   <div class="tema4" id="Conexión no persistente">
+    <h4>
+     Conexión no persistente
+    </h4>
+    <p>
+     Se cierra la conexión luego de que llega algo
+    </p>
+   </div>
+  </div>
+  <div class="tema2" id="Correos">
+   <h2>
+    Correos
+   </h2>
+   <p>
+    Se tienen protocolos de subida y bajada porque los de bajada tienen seguridad
                 de autenticación
-            </p>
-        </div>
-        
-        
-        
-        
-        <div class="cornell">
-             <p class="ask">Broadcast</p>
-            <hr/>
-            <div class="rta">es una conexión multipunto que permite la transmisión de información a usuarios de una red sin tener necesariamente las direcciones de cada destinatario.</div>
-        </div>
-        
-
-        <div class="cornell">
-             <p class="ask">Uno podría modificar para que la dirección no cambie cuando se reinice el modem?</p>
-            <hr/>
-            <div class="rta">Yes yes yes yes claro que yes!</div>
-
-        </div>
-
-        <div class="cornell">
-             <p class="ask">Diferencia entre router inalambrico y modem?</p>
-            <hr/>
-            <div class="rta">Router inalambrico es el objeto q me entrega tigo, claro etc</div>
-        </div>
-<div class="cornell">
-     <p class="ask">Asíncrono</p>
-    <hr/>
-    <div class="rta">No tengo que esperar a que el otro responda</div>
-</div>        
-
-    </body>
+   </p>
+  </div>
+  <div class="cornell" id="id29">
+   <p class="ask">
+    Broadcast
+   </p>
+   <hr/>
+   <div class="rta">
+    es una conexión multipunto que permite la transmisión de información a usuarios de una red sin tener necesariamente las direcciones de cada destinatario.
+   </div>
+  </div>
+  <div class="cornell" id="id30">
+   <p class="ask">
+    Uno podría modificar para que la dirección no cambie cuando se reinice el modem?
+   </p>
+   <hr/>
+   <div class="rta">
+    Yes yes yes yes claro que yes!
+   </div>
+  </div>
+  <div class="cornell" id="id31">
+   <p class="ask">
+    Diferencia entre router inalambrico y modem?
+   </p>
+   <hr/>
+   <div class="rta">
+    Router inalambrico es el objeto q me entrega tigo, claro etc
+   </div>
+  </div>
+  <div class="cornell" id="id32">
+   <p class="ask">
+    Asíncrono
+   </p>
+   <hr/>
+   <div class="rta">
+    No tengo que esperar a que el otro responda
+   </div>
+  </div>
+ </body>
 </html>
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert" defer=""/>
+<script defer="" src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert">
+</script>
