@@ -1,0 +1,31 @@
+<html lang="es">	<head>		<meta charset="UTF-8"/>		<link id="style" rel="stylesheet" href="./../estilos/oscuro.css" /><script src="./../main.js"></script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>	</head>	<body>		<div class="setter">			<button onclick="setStyles()">Cambiar</button>		</div><div class="tema1"><h1>Threads</h1><br/><p>Es una serie de sentencias ejecutadas</p><br/><p>Permite múltiples actividades dentro de un solo proceso o realizar tareas en segundo plano</p><br/><p>Aprovecha los sistemas multiprocesador</p><br/><br/><br/><p>Riesgos:</p><br/><p>Se requiere buena coordinación para acceso a variables comunes.</p><p>Muchos subprocesos perjudicarán el rendimiento de la App y su mantenibilidad</p><br/></div><div class="tema2"><h2>threads en java</h2><br/><p>Tienen un grado de prioridad del 1 al 10, que puede ser modificado usando `setPriority()`. </p><br/><p>Por default su prioridad es 5</p><br/><br/><br/><br/></div><div class="tema3"><h3>Creación de threads</h3><br/><br/></div><div class="tema4"><h4>extends Thread</h4><br/><pre class="prettyprint"><code class="lang-">public class MyThread extends Thread {
+   public void run(){  
+    System.out.println("thread is running...");  
+  } 
+   public static void main(String[] args) {
+     MyThread obj = new MyThread();
+     obj.start();
+}
+</code></pre><br/></div><div class="tema4"><h4>implements runnable</h4><br/><pre class="prettyprint"><code class="lang-">public class MyThread implements Runnable {
+   public void run(){  
+     System.out.println("thread is running..");  
+   }  
+   public static void main(String[] args) {
+     Thread t = new Thread(new MyThread());
+     t.start();
+}
+</code></pre><br/></div><div class="tema4"><h4>Cual método es mejor?</h4><br/><p>La herencia implica que no se podrá abstraer mas objetos</p><p>La interfaz no soporta métodos que si soporta laherencia tales como suspend(), resume() etc.</p><br/><br/></div><div class="tema3"><h3>Thread Scheduling</h3><br/><p>Ejecución de multiples hilos en una simple CPU en algún orden</p><br/>  <div class="cornell"><p class="ask">notify()</p><hr/><div class="rta">: despierta el hilo que estaba en WAIT y lo pone en READY</div></div>  <div class="cornell"><p class="ask">notifyAll()</p><hr/><div class="rta">: despierta todos los hilos que estaban en WAIT y lo pone en READY</div></div>  <div class="cornell"><p class="ask">yield()</p><hr/><div class="rta">: Permite que otros subprocesos de la misma prioridad se ejecuten</div></div>  <div class="cornell"><p class="ask">nSleep()</p><hr/><div class="rta">: Pausa el hilo por determinado tiempo</div></div>  <div class="cornell"><p class="ask">isAlive()</p><hr/><div class="rta">: Verifica que siga vivo</div></div>  <div class="cornell"><p class="ask">join()</p><hr/><div class="rta">: Pone el hilo en espera hasta que el hilo con el que se enlazó muera.</div></div><br/><br/><br/><pre class="prettyprint"><code class="lang-">// starts second thread after when
+        // first thread t1 has died.
+        try
+        {
+            System.out.println("Current Thread: "
+                  + Thread.currentThread().getName());
+            t1.join();
+            t2.start();
+        }
+
+        catch(Exception ex)  {}
+
+</code></pre><br/><br/></div><div class="tema2"><h2>Procesos</h2><br/><br/><br/><br/><br/><p>Es una instancia en ejecución de un programa al que el sistema asigna recursos como tiempo de CPU y memoria</p><br/><p>cada proceso tiene al menos un hilo</p><br/><p>Se forma un espacio de memoria para cada subproceso</p><br/><p>Los subprocesos que se ejecutan dentro de un proceso comparten el conjunto común de recursos entre ellos que se asignan al proceso</p><br/><br/><br/></div><div class="tema2"><h2>Threads vs Processes</h2><br/><pre class="prettyprint"><code class="lang-">graph LR
+A(Process) --&gt |1..*| B(Threads)
+</code></pre><br/><br/><table><tr><th> Dato                                           </th></tr></table><p></p><table><tr><th> espacio de direcciones virtuales               </th></tr><tr><td> Segmento de datos                              </td></tr><tr><td> Técnicas de comunicación para hablar con otros </td></tr><tr><td> Se debe sincronizar el acceso a datos          </td></tr><tr><td> Cantidad de recursos para instanciación        </td></tr></table><br/><p></p><br/><p>Cada thread tiene su propia pila en Java</p><br/></div>	</body></html><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>

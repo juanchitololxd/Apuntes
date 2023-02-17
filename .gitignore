@@ -3,3 +3,5 @@
 **/.RData
 **/.RHistory
 **/.Rproj
+**/venv
+**/.idea

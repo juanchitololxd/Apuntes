@@ -112,20 +112,26 @@
   border-bottom: 2px solid var(--text-color-resalt);
 }
 
-.summary > *{
+.summary-3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border-bottom: 2px solid var(--text-color-resalt);
+}
+
+.summary > *, .summary-3 > *{
 padding: 4%;
 }
 
-.summary .cornell{
+.summary .cornell, .summary-3 .cornell{
   display: inline-block;
   width: auto;
 }
-.summary .cornell .ask, .summary .cornell .rta {
+.summary .cornell .ask, .summary .cornell .rta, .summary-3 .cornell .ask, .summary-3 .cornell .rta {
   margin-inline: auto;
   width: auto;
 }
 
-.summary .cornell hr {
+.summary .cornell hr, .summary-3 .cornell hr {
   height: 7px;
   width: auto;
 }
@@ -219,7 +225,7 @@ iframe{
 
 
 @media screen and (max-width: 600px) {
-  .summary {
+  .summary, .summary-3 {
     display: block;
   }
 

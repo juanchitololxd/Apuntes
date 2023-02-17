@@ -1,0 +1,84 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link id="style" rel="stylesheet" href="./../estilos/oscuro.css" />
+    <script src="./../main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="setter"> <button onclick="setStyles()">Cambiar</button> </div>
+    <div class="tema1">
+        <h1>SOLID</h1><br />
+        <p>Conjunto de buenas practicas diseñados por Robert J. Martin. Creador de los libros *Clean-code* y *Clean
+            Architecture* con el fin de generar código legible, comprobable</p><br />
+    </div>
+    <div class="summary">
+
+        <div class="tema2">
+            <h2>Single Responsaiblity</h2><br />
+            <p>Indica que una clase solo debe realizar una acción. Si se requiere que una clase tenga otra funcionalidad
+                en
+                otro sector, es mejor crear otra clase. Un ejemplo es crear una clase aparte para la persistencia de un
+                objeto en lugar de acoplar ese código en una misma clase.</p><br /><br /><br />
+        </div>
+        <div class="tema2">
+            <h2>Open Close Principle</h2><br />
+            <p>*Las clases deben estar abiertas a la extensión (adición de funcionalidades) y cerradas a la modificación
+                (Cambiar el código de una clase existente)*</p><br />
+            <p>Esto usualmente se logra por medio de interfaces y clases abstractas</p><br /><br /><br />
+        </div>
+    </div>
+    <div class="summary-3">
+        
+        <div class="tema2">
+            <h2>Liskov Sustitution</h2><br />
+            <p>Todas las subclases deben ser sustituibles por una clase base (es herencia básicamente).</p><br />
+        </div>
+        <div class="tema2">
+            <h2>Interface Segregation</h2><br />
+            <p>*Muchas interfaces específicas del cliente son mejores que una interfaz de propósito general*</p>
+            <br /><br /><br />
+        </div>
+        <div class="tema2">
+            <h2>Dependency inversion</h2><br />
+            <p>Los módulos de alto nivel no deben depender de los de bajo nivel</p><br /><br /><br /><br /><br />
+
+        </div>
+
+    </div>
+    <pre class="mermaid">graph LR
+        A(Principios SOLID) --&gt B[Conjunto de buenas practicas]
+        A --&gt D[Están relacionados entre sí]
+        B --&gt C[Buena programación usando el POO]
+        A --&gt S(Single Responsability)
+        S --&gt E[Una clase solo debe de hacer una sola cosa]
+        A --&gt O(Open Close Principle)
+        O --&gt F[Las clases deben estar abiertas a la extensión adición  de funcionalidades y cerradas a la modificación]
+        A --&gt L(Liskov)
+        L --&gt G[Todas las subclases deben ser sustituibles por una clase base, es decir: herencia]
+        A --&gt I(Interface Segregation)
+        I --&gt i[Es mejor tener varias interfaces con diferentes propósitos en lugar de una sola]
+        A --&gt DD(Dependency inversion)
+        DD --&gt d[Los módulos de alto nivel no deben depender de los de bajo nivel]
+        subgraph Principios
+        S
+        O
+        L
+        I
+        DD
+        E
+        F
+        G
+        i
+        d
+        end
+        </pre><br /><br />
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+<script
+    type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({ startOnLoad: true }); </script>
